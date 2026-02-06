@@ -94,5 +94,23 @@ EMAIL
 jay@gmail.com
 
 
-SQL>
+SQL>SQL> alter table stu6 drop(b_id);
+
+Table altered.
+ alter table stu6
+  2  ADD b_id number(10);
+
+Table altered.
+
+SQL> alter table stu6
+  2  add constraint stu6
+  3
+SQL> alter table stu6
+  2  add constraint stu6_b_id_fk
+  3  foreign key(b_id)
+  4  references year(b_id)
+  5  on delete cascade;
+
+Table altered.
+
 
