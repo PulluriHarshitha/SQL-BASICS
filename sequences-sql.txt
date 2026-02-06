@@ -1,0 +1,27 @@
+sequences
+
+create table it1(s_id number(10)constraint it1_s_id_pk primary key,
+  2  s_name char (20));
+
+Table created.
+
+SQL> create sequence it1_s_id_seq
+  2  start with 1
+  3  increment by 2;
+
+Sequence created.
+
+insert into it1 values(it1_s_id_seq.NEXTVAL,'harshu');
+
+1 row created.
+
+SQL> insert into it1 values(it1_s_id_seq.NEXTVAL,'rohith');
+
+1 row created.
+
+SQL> select * from it1;
+
+      S_ID  S_NAME
+----------  --------------------
+         1  harshu
+         3  rohith
