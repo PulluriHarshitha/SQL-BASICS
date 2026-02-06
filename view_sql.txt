@@ -1,0 +1,181 @@
+view are used to display the data from the base table,views are doesnot contains its own data:
+it is classified into two types
+1)simple view : single statement selected view
+2)complex view : multiple statements selected
+
+ #creation of view:
+SQL> create view view_it_emp2
+  2  as
+  3  select employee_id,first_name,email from employees;
+
+View created.
+
+SQL> select * from view_it_emp2;
+
+EMPLOYEE_ID FIRST_NAME           EMAIL
+----------- -------------------- -------------------------
+        100 Steven               SKING
+        101 Neena                NKOCHHAR
+        102 Lex                  LDEHAAN
+        103 Alexander            AHUNOLD
+        104 Bruce                BERNST
+        105 David                DAUSTIN
+        106 Valli                VPATABAL
+        107 Diana                DLORENTZ
+        108 Nancy                NGREENBE
+        109 Daniel               DFAVIET
+        110 John                 JCHEN
+
+EMPLOYEE_ID FIRST_NAME           EMAIL
+----------- -------------------- -------------------------
+        111 Ismael               ISCIARRA
+        112 Jose Manuel          JMURMAN
+        113 Luis                 LPOPP
+        114 Den                  DRAPHEAL
+        115 Alexander            AKHOO
+        116 Shelli               SBAIDA
+        117 Sigal                STOBIAS
+        118 Guy                  GHIMURO
+        119 Karen                KCOLMENA
+        120 Matthew              MWEISS
+        121 Adam                 AFRIPP
+
+EMPLOYEE_ID FIRST_NAME           EMAIL
+----------- -------------------- -------------------------
+        122 Payam                PKAUFLIN
+        123 Shanta               SVOLLMAN
+        124 harshu               KMOURGOS
+        125 Julia                JNAYER
+        126 Irene                IMIKKILI
+        127 James                JLANDRY
+        128 Steven               SMARKLE
+        129 Laura                LBISSOT
+        130 Mozhe                MATKINSO
+        131 James                JAMRLOW
+        132 TJ                   TJOLSON
+
+EMPLOYEE_ID FIRST_NAME           EMAIL
+----------- -------------------- -------------------------
+        133 Jason                JMALLIN
+        134 Michael              MROGERS
+        135 Ki                   KGEE
+        136 Hazel                HPHILTAN
+        137 Renske               RLADWIG
+        138 Stephen              SSTILES
+        139 John                 JSEO
+        140 Joshua               JPATEL
+        141 Trenna               TRAJS
+        142 Curtis               CDAVIES
+        143 Randall              RMATOS
+
+EMPLOYEE_ID FIRST_NAME           EMAIL
+----------- -------------------- -------------------------
+        144 Peter                PVARGAS
+        145 John                 JRUSSEL
+        146 Karen                KPARTNER
+        147 Alberto              AERRAZUR
+        148 Gerald               GCAMBRAU
+        149 Eleni                EZLOTKEY
+        150 Peter                PTUCKER
+        151 David                DBERNSTE
+        152 Peter                PHALL
+        153 Christopher          COLSEN
+        154 Nanette              NCAMBRAU
+
+EMPLOYEE_ID FIRST_NAME           EMAIL
+----------- -------------------- -------------------------
+        155 Oliver               OTUVAULT
+        156 Janette              JKING
+        157 Patrick              PSULLY
+        158 Allan                AMCEWEN
+        159 Lindsey              LSMITH
+        160 Louise               LDORAN
+        161 Sarath               SSEWALL
+        162 Clara                CVISHNEY
+        163 Danielle             DGREENE
+        164 Mattea               MMARVINS
+        165 David                DLEE
+
+EMPLOYEE_ID FIRST_NAME           EMAIL
+----------- -------------------- -------------------------
+        166 Sundar               SANDE
+        167 Amit                 ABANDA
+        168 Lisa                 LOZER
+        169 Harrison             HBLOOM
+        170 Tayler               TFOX
+        171 William              WSMITH
+        172 Elizabeth            EBATES
+        173 Sundita              SKUMAR
+        174 Ellen                EABEL
+        175 Alyssa               AHUTTON
+        176 Jonathon             JTAYLOR
+
+EMPLOYEE_ID FIRST_NAME           EMAIL
+----------- -------------------- -------------------------
+        177 Jack                 JLIVINGS
+        178 Kimberely            KGRANT
+        179 Charles              CJOHNSON
+        180 Winston              WTAYLOR
+        181 Jean                 JFLEAUR
+        182 Martha               MSULLIVA
+        183 Girard               GGEONI
+        184 Nandita              NSARCHAN
+        185 Alexis               ABULL
+        186 Julia                JDELLING
+        187 Anthony              ACABRIO
+
+EMPLOYEE_ID FIRST_NAME           EMAIL
+----------- -------------------- -------------------------
+        188 Kelly                KCHUNG
+        189 Jennifer             JDILLY
+        190 Timothy              TGATES
+        191 Randall              RPERKINS
+        192 Sarah                SBELL
+        193 Britney              BEVERETT
+        194 Samuel               SMCCAIN
+        195 Vance                VJONES
+        196 Alana                AWALSH
+        197 Kevin                KFEENEY
+        198 Donald               DOCONNEL
+
+EMPLOYEE_ID FIRST_NAME           EMAIL
+----------- -------------------- -------------------------
+        199 Douglas              DGRANT
+        200 Jennifer             JWHALEN
+        201 Michael              MHARTSTE
+        202 Pat                  PFAY
+        203 Susan                SMAVRIS
+        204 Hermann              HBAER
+        205 Shelley              SHIGGINS
+        206 William              WGIETZ
+
+107 rows selected.
+
+SQL> desc employees;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ EMPLOYEE_ID                               NOT NULL NUMBER(6)
+ FIRST_NAME                                         VARCHAR2(20)
+ LAST_NAME                                 NOT NULL VARCHAR2(25)
+ EMAIL                                     NOT NULL VARCHAR2(25)
+ PHONE_NUMBER                                       VARCHAR2(20)
+ HIRE_DATE                                 NOT NULL DATE
+ JOB_ID                                    NOT NULL VARCHAR2(10)
+ SALARY                                             NUMBER(8,2)
+ COMMISSION_PCT                                     NUMBER(2,2)
+ MANAGER_ID                                         NUMBER(6)
+ DEPARTMENT_ID                                      NUMBER(4)
+
+SQL>HOW TO VIEW THE VIEWS WHICH WE CREATED,READ ONLY VALUES DOESNOT UPDATE
+
+create view view_it_emp7 as select employee_id,first_name,email from employees
+  2  where employee_id = 124;
+
+View created.
+
+ select * from view_it_emp7;
+
+EMPLOYEE_ID FIRST_NAME           EMAIL
+----------- -------------------- -------------------------
+        124 harshu               KMOURGOS
+
