@@ -5220,7 +5220,195 @@ Munich                                    70 Public Relations
 
 27 rows selected.
 
-SQL>
+SQL> desc jobs
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ JOB_ID                                    NOT NULL VARCHAR2(10)
+ JOB_TITLE                                 NOT NULL VARCHAR2(35)
+ MIN_SALARY                                         NUMBER(6)
+ MAX_SALARY                                         NUMBER(6)
+
+SQL> desc job_history
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ EMPLOYEE_ID                               NOT NULL NUMBER(6)
+ START_DATE                                NOT NULL DATE
+ END_DATE                                  NOT NULL DATE
+ JOB_ID                                    NOT NULL VARCHAR2(10)
+ DEPARTMENT_ID 
+
+SQL> select j.job_id,j.job_title,j.min_salary,j.max_salary,h.employee_id,h.start_date,h.end_date from jobs j join job_history h
+2  on(j.jobs_id=h.ljob_history_id(+));
+
+complex view
+
+create view view name
+ as 
+select * from tale1 name natural join table2 name
+
+create view view_it_emp2
+as
+select employee_id,first_name,salary,hire_date,department_id,department_name from employees natural join departments;
+View created.
+
+SQL> select * from view_it_emp5;
+
+EMPLOYEE_ID FIRST_NAME               SALARY HIRE_DATE DEPARTMENT_ID
+----------- -------------------- ---------- --------- -------------
+DEPARTMENT_NAME
+------------------------------
+        101 Neena                     17000 21-SEP-05            90
+Executive
+
+        102 Lex                       17000 13-JAN-01            90
+Executive
+
+        104 Bruce                      6000 21-MAY-07            60
+IT
+
+
+EMPLOYEE_ID FIRST_NAME               SALARY HIRE_DATE DEPARTMENT_ID
+----------- -------------------- ---------- --------- -------------
+DEPARTMENT_NAME
+------------------------------
+        105 David                      4800 25-JUN-05            60
+IT
+
+        106 Valli                      4800 05-FEB-06            60
+IT
+
+        107 Diana                      4200 07-FEB-07            60
+IT
+
+
+EMPLOYEE_ID FIRST_NAME               SALARY HIRE_DATE DEPARTMENT_ID
+----------- -------------------- ---------- --------- -------------
+DEPARTMENT_NAME
+------------------------------
+        109 Daniel                     9000 16-AUG-02           100
+Finance
+
+        110 John                       8200 28-SEP-05           100
+Finance
+
+        111 Ismael                     7700 30-SEP-05           100
+Finance
+
+
+EMPLOYEE_ID FIRST_NAME               SALARY HIRE_DATE DEPARTMENT_ID
+----------- -------------------- ---------- --------- -------------
+DEPARTMENT_NAME
+------------------------------
+        112 Jose Manuel                7800 07-MAR-06           100
+Finance
+
+        113 Luis                       6900 07-DEC-07           100
+Finance
+
+        115 Alexander                  3100 18-MAY-03            30
+Purchasing
+
+
+EMPLOYEE_ID FIRST_NAME               SALARY HIRE_DATE DEPARTMENT_ID
+----------- -------------------- ---------- --------- -------------
+DEPARTMENT_NAME
+------------------------------
+        116 Shelli                     2900 24-DEC-05            30
+Purchasing
+
+        117 Sigal                      2800 24-JUL-05            30
+Purchasing
+
+        118 Guy                        2600 15-NOV-06            30
+Purchasing
+
+
+EMPLOYEE_ID FIRST_NAME               SALARY HIRE_DATE DEPARTMENT_ID
+----------- -------------------- ---------- --------- -------------
+DEPARTMENT_NAME
+------------------------------
+        119 Karen                      2500 10-AUG-07            30
+Purchasing
+
+        129 Laura                      3300 20-AUG-05            50
+Shipping
+
+        130 Mozhe                      2800 30-OCT-05            50
+Shipping
+
+
+EMPLOYEE_ID FIRST_NAME               SALARY HIRE_DATE DEPARTMENT_ID
+----------- -------------------- ---------- --------- -------------
+DEPARTMENT_NAME
+------------------------------
+        131 James                      2500 16-FEB-05            50
+Shipping
+
+        132 TJ                         2100 10-APR-07            50
+Shipping
+
+        150 Peter                     10000 30-JAN-05            80
+Sales
+
+
+EMPLOYEE_ID FIRST_NAME               SALARY HIRE_DATE DEPARTMENT_ID
+----------- -------------------- ---------- --------- -------------
+DEPARTMENT_NAME
+------------------------------
+        151 David                      9500 24-MAR-05            80
+Sales
+
+        152 Peter                      9000 20-AUG-05            80
+Sales
+
+        153 Christopher                8000 30-MAR-06            80
+Sales
+
+
+EMPLOYEE_ID FIRST_NAME               SALARY HIRE_DATE DEPARTMENT_ID
+----------- -------------------- ---------- --------- -------------
+DEPARTMENT_NAME
+------------------------------
+        154 Nanette                    7500 09-DEC-06            80
+Sales
+
+        155 Oliver                     7000 23-NOV-07            80
+Sales
+
+        184 Nandita                    4200 27-JAN-04            50
+Shipping
+
+
+EMPLOYEE_ID FIRST_NAME               SALARY HIRE_DATE DEPARTMENT_ID
+----------- -------------------- ---------- --------- -------------
+DEPARTMENT_NAME
+------------------------------
+        185 Alexis                     4100 20-FEB-05            50
+Shipping
+
+        186 Julia                      3400 24-JUN-06            50
+Shipping
+
+        187 Anthony                    3000 07-FEB-07            50
+Shipping
+
+
+EMPLOYEE_ID FIRST_NAME               SALARY HIRE_DATE DEPARTMENT_ID
+----------- -------------------- ---------- --------- -------------
+DEPARTMENT_NAME
+------------------------------
+        202 Pat                        6000 17-AUG-05            20
+Marketing
+
+        206 William                    8300 07-JUN-02           110
+Accounting
+
+
+32 rows selected.
+
+TRUNCATE QUERRY: to delete a data
+
+truncate table table_name; 
 
 
 
