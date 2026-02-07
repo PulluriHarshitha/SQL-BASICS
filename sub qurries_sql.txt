@@ -1,0 +1,210 @@
+SUB QUERRIES:
+sub querry :querry embedded in another querry
+ 
+in single row sub querry
+  multi row sub querry
+
+in single row sub querry
+
+select first_name ,last_name,hire_date from employees
+ where hire_date >
+ (select hire_date from employees
+where first_name='Neena');
+
+FIRST_NAME           LAST_NAME                 HIRE_DATE
+-------------------- ------------------------- ---------
+Alexander            Hunold                    03-JAN-06
+Bruce                Ernst                     21-MAY-07
+Valli                Pataballa                 05-FEB-06
+Diana                Lorentz                   07-FEB-07
+John                 Chen                      28-SEP-05
+Ismael               Sciarra                   30-SEP-05
+Jose Manuel          Urman                     07-MAR-06
+Luis                 Popp                      07-DEC-07
+Shelli               Baida                     24-DEC-05
+Guy                  Himuro                    15-NOV-06
+Karen                Colmenares                10-AUG-07
+
+FIRST_NAME           LAST_NAME                 HIRE_DATE
+-------------------- ------------------------- ---------
+Shanta               Vollman                   10-OCT-05
+harshu               Mourgos                   16-NOV-07
+Irene                Mikkilineni               28-SEP-06
+James                Landry                    14-JAN-07
+Steven               Markle                    08-MAR-08
+Mozhe                Atkinson                  30-OCT-05
+TJ                   Olson                     10-APR-07
+Michael              Rogers                    26-AUG-06
+Ki                   Gee                       12-DEC-07
+Hazel                Philtanker                06-FEB-08
+Stephen              Stiles                    26-OCT-05
+
+FIRST_NAME           LAST_NAME                 HIRE_DATE
+-------------------- ------------------------- ---------
+John                 Seo                       12-FEB-06
+Joshua               Patel                     06-APR-06
+Randall              Matos                     15-MAR-06
+Peter                Vargas                    09-JUL-06
+Gerald               Cambrault                 15-OCT-07
+Eleni                Zlotkey                   29-JAN-08
+Christopher          Olsen                     30-MAR-06
+Nanette              Cambrault                 09-DEC-06
+Oliver               Tuvault                   23-NOV-07
+Louise               Doran                     15-DEC-05
+Sarath               Sewall                    03-NOV-06
+
+FIRST_NAME           LAST_NAME                 HIRE_DATE
+-------------------- ------------------------- ---------
+Clara                Vishney                   11-NOV-05
+Danielle             Greene                    19-MAR-07
+Mattea               Marvins                   24-JAN-08
+David                Lee                       23-FEB-08
+Sundar               Ande                      24-MAR-08
+Amit                 Banda                     21-APR-08
+Harrison             Bloom                     23-MAR-06
+Tayler               Fox                       24-JAN-06
+William              Smith                     23-FEB-07
+Elizabeth            Bates                     24-MAR-07
+Sundita              Kumar                     21-APR-08
+
+FIRST_NAME           LAST_NAME                 HIRE_DATE
+-------------------- ------------------------- ---------
+Jonathon             Taylor                    24-MAR-06
+Jack                 Livingston                23-APR-06
+Kimberely            Grant                     24-MAY-07
+Charles              Johnson                   04-JAN-08
+Winston              Taylor                    24-JAN-06
+Jean                 Fleaur                    23-FEB-06
+Martha               Sullivan                  21-JUN-07
+Girard               Geoni                     03-FEB-08
+Julia                Dellinger                 24-JUN-06
+Anthony              Cabrio                    07-FEB-07
+Timothy              Gates                     11-JUL-06
+
+FIRST_NAME           LAST_NAME                 HIRE_DATE
+-------------------- ------------------------- ---------
+Randall              Perkins                   19-DEC-07
+Samuel               McCain                    01-JUL-06
+Vance                Jones                     17-MAR-07
+Alana                Walsh                     24-APR-06
+Kevin                Feeney                    23-MAY-06
+Donald               OConnell                  21-JUN-07
+Douglas              Grant                     13-JAN-08
+
+62 rows selected.
+
+SQL>select first_name,last_name,hire_date from employees
+  2  where hire_date > any
+  3  (select hire_date from employees
+  4  where first_name='John');
+
+FIRST_NAME           LAST_NAME                 HIRE_DATE
+-------------------- ------------------------- ---------
+Sundita              Kumar                     21-APR-08
+Amit                 Banda                     21-APR-08
+Sundar               Ande                      24-MAR-08
+Steven               Markle                    08-MAR-08
+David                Lee                       23-FEB-08
+Hazel                Philtanker                06-FEB-08
+Girard               Geoni                     03-FEB-08
+Eleni                Zlotkey                   29-JAN-08
+Mattea               Marvins                   24-JAN-08
+Douglas              Grant                     13-JAN-08
+Charles              Johnson                   04-JAN-08
+
+FIRST_NAME           LAST_NAME                 HIRE_DATE
+-------------------- ------------------------- ---------
+Randall              Perkins                   19-DEC-07
+Ki                   Gee                       12-DEC-07
+Luis                 Popp                      07-DEC-07
+Oliver               Tuvault                   23-NOV-07
+harshu               Mourgos                   16-NOV-07
+Gerald               Cambrault                 15-OCT-07
+Karen                Colmenares                10-AUG-07
+Donald               OConnell                  21-JUN-07
+Martha               Sullivan                  21-JUN-07
+Kimberely            Grant                     24-MAY-07
+Bruce                Ernst                     21-MAY-07
+
+FIRST_NAME           LAST_NAME                 HIRE_DATE
+-------------------- ------------------------- ---------
+TJ                   Olson                     10-APR-07
+Elizabeth            Bates                     24-MAR-07
+Danielle             Greene                    19-MAR-07
+Vance                Jones                     17-MAR-07
+William              Smith                     23-FEB-07
+Anthony              Cabrio                    07-FEB-07
+Diana                Lorentz                   07-FEB-07
+James                Landry                    14-JAN-07
+Nanette              Cambrault                 09-DEC-06
+Guy                  Himuro                    15-NOV-06
+Sarath               Sewall                    03-NOV-06
+
+FIRST_NAME           LAST_NAME                 HIRE_DATE
+-------------------- ------------------------- ---------
+Irene                Mikkilineni               28-SEP-06
+Michael              Rogers                    26-AUG-06
+Timothy              Gates                     11-JUL-06
+Peter                Vargas                    09-JUL-06
+Samuel               McCain                    01-JUL-06
+Julia                Dellinger                 24-JUN-06
+Kevin                Feeney                    23-MAY-06
+Alana                Walsh                     24-APR-06
+Jack                 Livingston                23-APR-06
+Joshua               Patel                     06-APR-06
+Christopher          Olsen                     30-MAR-06
+
+FIRST_NAME           LAST_NAME                 HIRE_DATE
+-------------------- ------------------------- ---------
+Jonathon             Taylor                    24-MAR-06
+Harrison             Bloom                     23-MAR-06
+Randall              Matos                     15-MAR-06
+Jose Manuel          Urman                     07-MAR-06
+Jean                 Fleaur                    23-FEB-06
+John                 Seo                       12-FEB-06
+Valli                Pataballa                 05-FEB-06
+Tayler               Fox                       24-JAN-06
+Winston              Taylor                    24-JAN-06
+Alexander            Hunold                    03-JAN-06
+Shelli               Baida                     24-DEC-05
+
+FIRST_NAME           LAST_NAME                 HIRE_DATE
+-------------------- ------------------------- ---------
+Louise               Doran                     15-DEC-05
+Clara                Vishney                   11-NOV-05
+Mozhe                Atkinson                  30-OCT-05
+Stephen              Stiles                    26-OCT-05
+Shanta               Vollman                   10-OCT-05
+Ismael               Sciarra                   30-SEP-05
+John                 Chen                      28-SEP-05
+Neena                Kochhar                   21-SEP-05
+Laura                Bissot                    20-AUG-05
+Peter                Hall                      20-AUG-05
+Pat                  Fay                       17-AUG-05
+
+FIRST_NAME           LAST_NAME                 HIRE_DATE
+-------------------- ------------------------- ---------
+Jennifer             Dilly                     13-AUG-05
+Sigal                Tobias                    24-JUL-05
+Julia                Nayer                     16-JUL-05
+David                Austin                    25-JUN-05
+Kelly                Chung                     14-JUN-05
+Adam                 Fripp                     10-APR-05
+David                Bernstein                 24-MAR-05
+Alyssa               Hutton                    19-MAR-05
+Lisa                 Ozer                      11-MAR-05
+Lindsey              Smith                     10-MAR-05
+Alberto              Errazuriz                 10-MAR-05
+
+FIRST_NAME           LAST_NAME                 HIRE_DATE
+-------------------- ------------------------- ---------
+Britney              Everett                   03-MAR-05
+Alexis               Bull                      20-FEB-05
+James                Marlow                    16-FEB-05
+Peter                Tucker                    30-JAN-05
+Curtis               Davies                    29-JAN-05
+Karen                Partners                  05-JAN-05
+
+83 rows selected.
+
+SQL>
