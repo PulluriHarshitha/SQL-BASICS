@@ -3492,7 +3492,1741 @@ EMPLOYEE_ID FIRST_NAME           MANAGER_ID manager_name
 
 106 rows selected.
 
+USING
+
+SQL> select employee_id,first_name,salary,department_id,department_name
+  2  from employees join departments
+  3  using(department_id);
+
+EMPLOYEE_ID FIRST_NAME               SALARY DEPARTMENT_ID
+----------- -------------------- ---------- -------------
+DEPARTMENT_NAME
+------------------------------
+        200 Jennifer                   4400            10
+Administration
+
+        201 Michael                   13000            20
+Marketing
+
+        202 Pat                        6000            20
+Marketing
+
+
+EMPLOYEE_ID FIRST_NAME               SALARY DEPARTMENT_ID
+----------- -------------------- ---------- -------------
+DEPARTMENT_NAME
+------------------------------
+        114 Den                       11000            30
+Purchasing
+
+        115 Alexander                  3100            30
+Purchasing
+
+        116 Shelli                     2900            30
+Purchasing
+
+
+EMPLOYEE_ID FIRST_NAME               SALARY DEPARTMENT_ID
+----------- -------------------- ---------- -------------
+DEPARTMENT_NAME
+------------------------------
+        117 Sigal                      2800            30
+Purchasing
+
+        118 Guy                        2600            30
+Purchasing
+
+        119 Karen                      2500            30
+Purchasing
+
+
+EMPLOYEE_ID FIRST_NAME               SALARY DEPARTMENT_ID
+----------- -------------------- ---------- -------------
+DEPARTMENT_NAME
+------------------------------
+        203 Susan                      6500            40
+Human Resources
+
+        120 Matthew                    8000            50
+Shipping
+
+        121 Adam                       8200            50
+Shipping
+
+
+EMPLOYEE_ID FIRST_NAME               SALARY DEPARTMENT_ID
+----------- -------------------- ---------- -------------
+DEPARTMENT_NAME
+------------------------------
+        122 Payam                      7900            50
+Shipping
+
+        123 Shanta                     6500            50
+Shipping
+
+        124 harshu                     5800            50
+Shipping
+
+
+EMPLOYEE_ID FIRST_NAME               SALARY DEPARTMENT_ID
+----------- -------------------- ---------- -------------
+DEPARTMENT_NAME
+------------------------------
+        125 Julia                      3200            50
+Shipping
+
+        126 Irene                      2700            50
+Shipping
+
+        127 James                      2400            50
+Shipping
+
+
+EMPLOYEE_ID FIRST_NAME               SALARY DEPARTMENT_ID
+----------- -------------------- ---------- -------------
+DEPARTMENT_NAME
+------------------------------
+        128 Steven                     2200            50
+Shipping
+
+        129 Laura                      3300            50
+Shipping
+
+        130 Mozhe                      2800            50
+Shipping
+
+
+EMPLOYEE_ID FIRST_NAME               SALARY DEPARTMENT_ID
+----------- -------------------- ---------- -------------
+DEPARTMENT_NAME
+------------------------------
+        131 James                      2500            50
+Shipping
+
+        132 TJ                         2100            50
+Shipping
+
+        133 Jason                      3300            50
+Shipping
+
+
+EMPLOYEE_ID FIRST_NAME               SALARY DEPARTMENT_ID
+----------- -------------------- ---------- -------------
+DEPARTMENT_NAME
+------------------------------
+        134 Michael                    2900            50
+Shipping
+
+        135 Ki                         2400            50
+Shipping
+
+        136 Hazel                      2200            50
+Shipping
+
+
+EMPLOYEE_ID FIRST_NAME               SALARY DEPARTMENT_ID
+----------- -------------------- ---------- -------------
+DEPARTMENT_NAME
+------------------------------
+        137 Renske                     3600            50
+Shipping
+
+        138 Stephen                    3200            50
+Shipping
+
+        139 John                       2700            50
+Shipping
+
+
+EMPLOYEE_ID FIRST_NAME               SALARY DEPARTMENT_ID
+----------- -------------------- ---------- -------------
+DEPARTMENT_NAME
+------------------------------
+        140 Joshua                     2500            50
+Shipping
+
+        141 Trenna                     3500            50
+Shipping
+
+        142 Curtis                     3100            50
+Shipping
+
+
+EMPLOYEE_ID FIRST_NAME               SALARY DEPARTMENT_ID
+----------- -------------------- ---------- -------------
+DEPARTMENT_NAME
+------------------------------
+        143 Randall                    2600            50
+Shipping
+
+        144 Peter                      2500            50
+Shipping
+
+        180 Winston                    3200            50
+Shipping
+
+
+EMPLOYEE_ID FIRST_NAME               SALARY DEPARTMENT_ID
+----------- -------------------- ---------- -------------
+DEPARTMENT_NAME
+------------------------------
+        181 Jean                       3100            50
+Shipping
+
+        182 Martha                     2500            50
+Shipping
+
+        183 Girard                     2800            50
+Shipping
+
+
+EMPLOYEE_ID FIRST_NAME               SALARY DEPARTMENT_ID
+----------- -------------------- ---------- -------------
+DEPARTMENT_NAME
+------------------------------
+        184 Nandita                    4200            50
+Shipping
+
+        185 Alexis                     4100            50
+Shipping
+
+        186 Julia                      3400            50
+Shipping
+
+
+EMPLOYEE_ID FIRST_NAME               SALARY DEPARTMENT_ID
+----------- -------------------- ---------- -------------
+DEPARTMENT_NAME
+------------------------------
+        187 Anthony                    3000            50
+Shipping
+
+        188 Kelly                      3800            50
+Shipping
+
+        189 Jennifer                   3600            50
+Shipping
+
+
+EMPLOYEE_ID FIRST_NAME               SALARY DEPARTMENT_ID
+----------- -------------------- ---------- -------------
+DEPARTMENT_NAME
+------------------------------
+        190 Timothy                    2900            50
+Shipping
+
+        191 Randall                    2500            50
+Shipping
+
+        192 Sarah                      4000            50
+Shipping
+
+
+EMPLOYEE_ID FIRST_NAME               SALARY DEPARTMENT_ID
+----------- -------------------- ---------- -------------
+DEPARTMENT_NAME
+------------------------------
+        193 Britney                    3900            50
+Shipping
+
+        194 Samuel                     3200            50
+Shipping
+
+        195 Vance                      2800            50
+Shipping
+
+
+EMPLOYEE_ID FIRST_NAME               SALARY DEPARTMENT_ID
+----------- -------------------- ---------- -------------
+DEPARTMENT_NAME
+------------------------------
+        196 Alana                      3100            50
+Shipping
+
+        197 Kevin                      3000            50
+Shipping
+
+        198 Donald                     2600            50
+Shipping
+
+
+EMPLOYEE_ID FIRST_NAME               SALARY DEPARTMENT_ID
+----------- -------------------- ---------- -------------
+DEPARTMENT_NAME
+------------------------------
+        199 Douglas                    2600            50
+Shipping
+
+        103 Alexander                  9000            60
+IT
+
+        104 Bruce                      6000            60
+IT
+
+
+EMPLOYEE_ID FIRST_NAME               SALARY DEPARTMENT_ID
+----------- -------------------- ---------- -------------
+DEPARTMENT_NAME
+------------------------------
+        105 David                      4800            60
+IT
+
+        106 Valli                      4800            60
+IT
+
+        107 Diana                      4200            60
+IT
+
+
+EMPLOYEE_ID FIRST_NAME               SALARY DEPARTMENT_ID
+----------- -------------------- ---------- -------------
+DEPARTMENT_NAME
+------------------------------
+        204 Hermann                   10000            70
+Public Relations
+
+        145 John                      14000            80
+Sales
+
+        146 Karen                     13500            80
+Sales
+
+
+EMPLOYEE_ID FIRST_NAME               SALARY DEPARTMENT_ID
+----------- -------------------- ---------- -------------
+DEPARTMENT_NAME
+------------------------------
+        147 Alberto                   12000            80
+Sales
+
+        148 Gerald                    11000            80
+Sales
+
+        149 Eleni                     10500            80
+Sales
+
+
+EMPLOYEE_ID FIRST_NAME               SALARY DEPARTMENT_ID
+----------- -------------------- ---------- -------------
+DEPARTMENT_NAME
+------------------------------
+        150 Peter                     10000            80
+Sales
+
+        151 David                      9500            80
+Sales
+
+        152 Peter                      9000            80
+Sales
+
+
+EMPLOYEE_ID FIRST_NAME               SALARY DEPARTMENT_ID
+----------- -------------------- ---------- -------------
+DEPARTMENT_NAME
+------------------------------
+        153 Christopher                8000            80
+Sales
+
+        154 Nanette                    7500            80
+Sales
+
+        155 Oliver                     7000            80
+Sales
+
+
+EMPLOYEE_ID FIRST_NAME               SALARY DEPARTMENT_ID
+----------- -------------------- ---------- -------------
+DEPARTMENT_NAME
+------------------------------
+        156 Janette                   10000            80
+Sales
+
+        157 Patrick                    9500            80
+Sales
+
+        158 Allan                      9000            80
+Sales
+
+
+EMPLOYEE_ID FIRST_NAME               SALARY DEPARTMENT_ID
+----------- -------------------- ---------- -------------
+DEPARTMENT_NAME
+------------------------------
+        159 Lindsey                    8000            80
+Sales
+
+        160 Louise                     7500            80
+Sales
+
+        161 Sarath                     7000            80
+Sales
+
+
+EMPLOYEE_ID FIRST_NAME               SALARY DEPARTMENT_ID
+----------- -------------------- ---------- -------------
+DEPARTMENT_NAME
+------------------------------
+        162 Clara                     10500            80
+Sales
+
+        163 Danielle                   9500            80
+Sales
+
+        164 Mattea                     7200            80
+Sales
+
+
+EMPLOYEE_ID FIRST_NAME               SALARY DEPARTMENT_ID
+----------- -------------------- ---------- -------------
+DEPARTMENT_NAME
+------------------------------
+        165 David                      6800            80
+Sales
+
+        166 Sundar                     6400            80
+Sales
+
+        167 Amit                       6200            80
+Sales
+
+
+EMPLOYEE_ID FIRST_NAME               SALARY DEPARTMENT_ID
+----------- -------------------- ---------- -------------
+DEPARTMENT_NAME
+------------------------------
+        168 Lisa                      11500            80
+Sales
+
+        169 Harrison                  10000            80
+Sales
+
+        170 Tayler                     9600            80
+Sales
+
+
+EMPLOYEE_ID FIRST_NAME               SALARY DEPARTMENT_ID
+----------- -------------------- ---------- -------------
+DEPARTMENT_NAME
+------------------------------
+        171 William                    7400            80
+Sales
+
+        172 Elizabeth                  7300            80
+Sales
+
+        173 Sundita                    6100            80
+Sales
+
+
+EMPLOYEE_ID FIRST_NAME               SALARY DEPARTMENT_ID
+----------- -------------------- ---------- -------------
+DEPARTMENT_NAME
+------------------------------
+        174 Ellen                     11000            80
+Sales
+
+        175 Alyssa                     8800            80
+Sales
+
+        176 Jonathon                   8600            80
+Sales
+
+
+EMPLOYEE_ID FIRST_NAME               SALARY DEPARTMENT_ID
+----------- -------------------- ---------- -------------
+DEPARTMENT_NAME
+------------------------------
+        177 Jack                       8400            80
+Sales
+
+        179 Charles                    6200            80
+Sales
+
+        100 Steven                    24000            90
+Executive
+
+
+EMPLOYEE_ID FIRST_NAME               SALARY DEPARTMENT_ID
+----------- -------------------- ---------- -------------
+DEPARTMENT_NAME
+------------------------------
+        101 Neena                     17000            90
+Executive
+
+        102 Lex                       17000            90
+Executive
+
+        108 Nancy                     12008           100
+Finance
+
+
+EMPLOYEE_ID FIRST_NAME               SALARY DEPARTMENT_ID
+----------- -------------------- ---------- -------------
+DEPARTMENT_NAME
+------------------------------
+        109 Daniel                     9000           100
+Finance
+
+        110 John                       8200           100
+Finance
+
+        111 Ismael                     7700           100
+Finance
+
+
+EMPLOYEE_ID FIRST_NAME               SALARY DEPARTMENT_ID
+----------- -------------------- ---------- -------------
+DEPARTMENT_NAME
+------------------------------
+        112 Jose Manuel                7800           100
+Finance
+
+        113 Luis                       6900           100
+Finance
+
+        205 Shelley                   12008           110
+Accounting
+
+
+EMPLOYEE_ID FIRST_NAME               SALARY DEPARTMENT_ID
+----------- -------------------- ---------- -------------
+DEPARTMENT_NAME
+------------------------------
+        206 William                    8300           110
+Accounting
+
+
+106 rows selected.
+
+ left outer join 
+
+SQL> select e.employee_id,e.first_name,e.hire_date,d.department_id,d.department_name from employees e join departments d
+  2  on(e.department_id=d.department_id(+));
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE DEPARTMENT_ID
+----------- -------------------- --------- -------------
+DEPARTMENT_NAME
+------------------------------
+        200 Jennifer             17-SEP-03            10
+Administration
+
+        202 Pat                  17-AUG-05            20
+Marketing
+
+        201 Michael              17-FEB-04            20
+Marketing
+
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE DEPARTMENT_ID
+----------- -------------------- --------- -------------
+DEPARTMENT_NAME
+------------------------------
+        119 Karen                10-AUG-07            30
+Purchasing
+
+        118 Guy                  15-NOV-06            30
+Purchasing
+
+        117 Sigal                24-JUL-05            30
+Purchasing
+
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE DEPARTMENT_ID
+----------- -------------------- --------- -------------
+DEPARTMENT_NAME
+------------------------------
+        116 Shelli               24-DEC-05            30
+Purchasing
+
+        115 Alexander            18-MAY-03            30
+Purchasing
+
+        114 Den                  07-DEC-02            30
+Purchasing
+
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE DEPARTMENT_ID
+----------- -------------------- --------- -------------
+DEPARTMENT_NAME
+------------------------------
+        203 Susan                07-JUN-02            40
+Human Resources
+
+        199 Douglas              13-JAN-08            50
+Shipping
+
+        198 Donald               21-JUN-07            50
+Shipping
+
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE DEPARTMENT_ID
+----------- -------------------- --------- -------------
+DEPARTMENT_NAME
+------------------------------
+        197 Kevin                23-MAY-06            50
+Shipping
+
+        196 Alana                24-APR-06            50
+Shipping
+
+        195 Vance                17-MAR-07            50
+Shipping
+
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE DEPARTMENT_ID
+----------- -------------------- --------- -------------
+DEPARTMENT_NAME
+------------------------------
+        194 Samuel               01-JUL-06            50
+Shipping
+
+        193 Britney              03-MAR-05            50
+Shipping
+
+        192 Sarah                04-FEB-04            50
+Shipping
+
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE DEPARTMENT_ID
+----------- -------------------- --------- -------------
+DEPARTMENT_NAME
+------------------------------
+        191 Randall              19-DEC-07            50
+Shipping
+
+        190 Timothy              11-JUL-06            50
+Shipping
+
+        189 Jennifer             13-AUG-05            50
+Shipping
+
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE DEPARTMENT_ID
+----------- -------------------- --------- -------------
+DEPARTMENT_NAME
+------------------------------
+        188 Kelly                14-JUN-05            50
+Shipping
+
+        187 Anthony              07-FEB-07            50
+Shipping
+
+        186 Julia                24-JUN-06            50
+Shipping
+
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE DEPARTMENT_ID
+----------- -------------------- --------- -------------
+DEPARTMENT_NAME
+------------------------------
+        185 Alexis               20-FEB-05            50
+Shipping
+
+        184 Nandita              27-JAN-04            50
+Shipping
+
+        183 Girard               03-FEB-08            50
+Shipping
+
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE DEPARTMENT_ID
+----------- -------------------- --------- -------------
+DEPARTMENT_NAME
+------------------------------
+        182 Martha               21-JUN-07            50
+Shipping
+
+        181 Jean                 23-FEB-06            50
+Shipping
+
+        180 Winston              24-JAN-06            50
+Shipping
+
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE DEPARTMENT_ID
+----------- -------------------- --------- -------------
+DEPARTMENT_NAME
+------------------------------
+        144 Peter                09-JUL-06            50
+Shipping
+
+        143 Randall              15-MAR-06            50
+Shipping
+
+        142 Curtis               29-JAN-05            50
+Shipping
+
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE DEPARTMENT_ID
+----------- -------------------- --------- -------------
+DEPARTMENT_NAME
+------------------------------
+        141 Trenna               17-OCT-03            50
+Shipping
+
+        140 Joshua               06-APR-06            50
+Shipping
+
+        139 John                 12-FEB-06            50
+Shipping
+
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE DEPARTMENT_ID
+----------- -------------------- --------- -------------
+DEPARTMENT_NAME
+------------------------------
+        138 Stephen              26-OCT-05            50
+Shipping
+
+        137 Renske               14-JUL-03            50
+Shipping
+
+        136 Hazel                06-FEB-08            50
+Shipping
+
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE DEPARTMENT_ID
+----------- -------------------- --------- -------------
+DEPARTMENT_NAME
+------------------------------
+        135 Ki                   12-DEC-07            50
+Shipping
+
+        134 Michael              26-AUG-06            50
+Shipping
+
+        133 Jason                14-JUN-04            50
+Shipping
+
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE DEPARTMENT_ID
+----------- -------------------- --------- -------------
+DEPARTMENT_NAME
+------------------------------
+        132 TJ                   10-APR-07            50
+Shipping
+
+        131 James                16-FEB-05            50
+Shipping
+
+        130 Mozhe                30-OCT-05            50
+Shipping
+
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE DEPARTMENT_ID
+----------- -------------------- --------- -------------
+DEPARTMENT_NAME
+------------------------------
+        129 Laura                20-AUG-05            50
+Shipping
+
+        128 Steven               08-MAR-08            50
+Shipping
+
+        127 James                14-JAN-07            50
+Shipping
+
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE DEPARTMENT_ID
+----------- -------------------- --------- -------------
+DEPARTMENT_NAME
+------------------------------
+        126 Irene                28-SEP-06            50
+Shipping
+
+        125 Julia                16-JUL-05            50
+Shipping
+
+        124 harshu               16-NOV-07            50
+Shipping
+
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE DEPARTMENT_ID
+----------- -------------------- --------- -------------
+DEPARTMENT_NAME
+------------------------------
+        123 Shanta               10-OCT-05            50
+Shipping
+
+        122 Payam                01-MAY-03            50
+Shipping
+
+        121 Adam                 10-APR-05            50
+Shipping
+
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE DEPARTMENT_ID
+----------- -------------------- --------- -------------
+DEPARTMENT_NAME
+------------------------------
+        120 Matthew              18-JUL-04            50
+Shipping
+
+        107 Diana                07-FEB-07            60
+IT
+
+        106 Valli                05-FEB-06            60
+IT
+
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE DEPARTMENT_ID
+----------- -------------------- --------- -------------
+DEPARTMENT_NAME
+------------------------------
+        105 David                25-JUN-05            60
+IT
+
+        104 Bruce                21-MAY-07            60
+IT
+
+        103 Alexander            03-JAN-06            60
+IT
+
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE DEPARTMENT_ID
+----------- -------------------- --------- -------------
+DEPARTMENT_NAME
+------------------------------
+        204 Hermann              07-JUN-02            70
+Public Relations
+
+        179 Charles              04-JAN-08            80
+Sales
+
+        177 Jack                 23-APR-06            80
+Sales
+
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE DEPARTMENT_ID
+----------- -------------------- --------- -------------
+DEPARTMENT_NAME
+------------------------------
+        176 Jonathon             24-MAR-06            80
+Sales
+
+        175 Alyssa               19-MAR-05            80
+Sales
+
+        174 Ellen                11-MAY-04            80
+Sales
+
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE DEPARTMENT_ID
+----------- -------------------- --------- -------------
+DEPARTMENT_NAME
+------------------------------
+        173 Sundita              21-APR-08            80
+Sales
+
+        172 Elizabeth            24-MAR-07            80
+Sales
+
+        171 William              23-FEB-07            80
+Sales
+
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE DEPARTMENT_ID
+----------- -------------------- --------- -------------
+DEPARTMENT_NAME
+------------------------------
+        170 Tayler               24-JAN-06            80
+Sales
+
+        169 Harrison             23-MAR-06            80
+Sales
+
+        168 Lisa                 11-MAR-05            80
+Sales
+
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE DEPARTMENT_ID
+----------- -------------------- --------- -------------
+DEPARTMENT_NAME
+------------------------------
+        167 Amit                 21-APR-08            80
+Sales
+
+        166 Sundar               24-MAR-08            80
+Sales
+
+        165 David                23-FEB-08            80
+Sales
+
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE DEPARTMENT_ID
+----------- -------------------- --------- -------------
+DEPARTMENT_NAME
+------------------------------
+        164 Mattea               24-JAN-08            80
+Sales
+
+        163 Danielle             19-MAR-07            80
+Sales
+
+        162 Clara                11-NOV-05            80
+Sales
+
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE DEPARTMENT_ID
+----------- -------------------- --------- -------------
+DEPARTMENT_NAME
+------------------------------
+        161 Sarath               03-NOV-06            80
+Sales
+
+        160 Louise               15-DEC-05            80
+Sales
+
+        159 Lindsey              10-MAR-05            80
+Sales
+
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE DEPARTMENT_ID
+----------- -------------------- --------- -------------
+DEPARTMENT_NAME
+------------------------------
+        158 Allan                01-AUG-04            80
+Sales
+
+        157 Patrick              04-MAR-04            80
+Sales
+
+        156 Janette              30-JAN-04            80
+Sales
+
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE DEPARTMENT_ID
+----------- -------------------- --------- -------------
+DEPARTMENT_NAME
+------------------------------
+        155 Oliver               23-NOV-07            80
+Sales
+
+        154 Nanette              09-DEC-06            80
+Sales
+
+        153 Christopher          30-MAR-06            80
+Sales
+
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE DEPARTMENT_ID
+----------- -------------------- --------- -------------
+DEPARTMENT_NAME
+------------------------------
+        152 Peter                20-AUG-05            80
+Sales
+
+        151 David                24-MAR-05            80
+Sales
+
+        150 Peter                30-JAN-05            80
+Sales
+
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE DEPARTMENT_ID
+----------- -------------------- --------- -------------
+DEPARTMENT_NAME
+------------------------------
+        149 Eleni                29-JAN-08            80
+Sales
+
+        148 Gerald               15-OCT-07            80
+Sales
+
+        147 Alberto              10-MAR-05            80
+Sales
+
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE DEPARTMENT_ID
+----------- -------------------- --------- -------------
+DEPARTMENT_NAME
+------------------------------
+        146 Karen                05-JAN-05            80
+Sales
+
+        145 John                 01-OCT-04            80
+Sales
+
+        102 Lex                  13-JAN-01            90
+Executive
+
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE DEPARTMENT_ID
+----------- -------------------- --------- -------------
+DEPARTMENT_NAME
+------------------------------
+        101 Neena                21-SEP-05            90
+Executive
+
+        100 Steven               17-JUN-03            90
+Executive
+
+        113 Luis                 07-DEC-07           100
+Finance
+
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE DEPARTMENT_ID
+----------- -------------------- --------- -------------
+DEPARTMENT_NAME
+------------------------------
+        112 Jose Manuel          07-MAR-06           100
+Finance
+
+        111 Ismael               30-SEP-05           100
+Finance
+
+        110 John                 28-SEP-05           100
+Finance
+
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE DEPARTMENT_ID
+----------- -------------------- --------- -------------
+DEPARTMENT_NAME
+------------------------------
+        109 Daniel               16-AUG-02           100
+Finance
+
+        108 Nancy                17-AUG-02           100
+Finance
+
+        206 William              07-JUN-02           110
+Accounting
+
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE DEPARTMENT_ID
+----------- -------------------- --------- -------------
+DEPARTMENT_NAME
+------------------------------
+        205 Shelley              07-JUN-02           110
+Accounting
+
+        178 Kimberely            24-MAY-07
+
+
+
+107 rows selected.
+
+RIGHT OUTER JOIN
+
+ select e.employee_id,e.first_name,e.hire_date,d.department_id,d.department_name from employees e join departments d
+  2  on(e.department_id(+)=d.department_id);
+
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE DEPARTMENT_ID
+----------- -------------------- --------- -------------
+DEPARTMENT_NAME
+------------------------------
+        200 Jennifer             17-SEP-03            10
+Administration
+
+        201 Michael              17-FEB-04            20
+Marketing
+
+        202 Pat                  17-AUG-05            20
+Marketing
+
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE DEPARTMENT_ID
+----------- -------------------- --------- -------------
+DEPARTMENT_NAME
+------------------------------
+        114 Den                  07-DEC-02            30
+Purchasing
+
+        115 Alexander            18-MAY-03            30
+Purchasing
+
+        116 Shelli               24-DEC-05            30
+Purchasing
+
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE DEPARTMENT_ID
+----------- -------------------- --------- -------------
+DEPARTMENT_NAME
+------------------------------
+        117 Sigal                24-JUL-05            30
+Purchasing
+
+        118 Guy                  15-NOV-06            30
+Purchasing
+
+        119 Karen                10-AUG-07            30
+Purchasing
+
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE DEPARTMENT_ID
+----------- -------------------- --------- -------------
+DEPARTMENT_NAME
+------------------------------
+        203 Susan                07-JUN-02            40
+Human Resources
+
+        120 Matthew              18-JUL-04            50
+Shipping
+
+        121 Adam                 10-APR-05            50
+Shipping
+
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE DEPARTMENT_ID
+----------- -------------------- --------- -------------
+DEPARTMENT_NAME
+------------------------------
+        122 Payam                01-MAY-03            50
+Shipping
+
+        123 Shanta               10-OCT-05            50
+Shipping
+
+        124 harshu               16-NOV-07            50
+Shipping
+
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE DEPARTMENT_ID
+----------- -------------------- --------- -------------
+DEPARTMENT_NAME
+------------------------------
+        125 Julia                16-JUL-05            50
+Shipping
+
+        126 Irene                28-SEP-06            50
+Shipping
+
+        127 James                14-JAN-07            50
+Shipping
+
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE DEPARTMENT_ID
+----------- -------------------- --------- -------------
+DEPARTMENT_NAME
+------------------------------
+        128 Steven               08-MAR-08            50
+Shipping
+
+        129 Laura                20-AUG-05            50
+Shipping
+
+        130 Mozhe                30-OCT-05            50
+Shipping
+
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE DEPARTMENT_ID
+----------- -------------------- --------- -------------
+DEPARTMENT_NAME
+------------------------------
+        131 James                16-FEB-05            50
+Shipping
+
+        132 TJ                   10-APR-07            50
+Shipping
+
+        133 Jason                14-JUN-04            50
+Shipping
+
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE DEPARTMENT_ID
+----------- -------------------- --------- -------------
+DEPARTMENT_NAME
+------------------------------
+        134 Michael              26-AUG-06            50
+Shipping
+
+        135 Ki                   12-DEC-07            50
+Shipping
+
+        136 Hazel                06-FEB-08            50
+Shipping
+
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE DEPARTMENT_ID
+----------- -------------------- --------- -------------
+DEPARTMENT_NAME
+------------------------------
+        137 Renske               14-JUL-03            50
+Shipping
+
+        138 Stephen              26-OCT-05            50
+Shipping
+
+        139 John                 12-FEB-06            50
+Shipping
+
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE DEPARTMENT_ID
+----------- -------------------- --------- -------------
+DEPARTMENT_NAME
+------------------------------
+        140 Joshua               06-APR-06            50
+Shipping
+
+        141 Trenna               17-OCT-03            50
+Shipping
+
+        142 Curtis               29-JAN-05            50
+Shipping
+
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE DEPARTMENT_ID
+----------- -------------------- --------- -------------
+DEPARTMENT_NAME
+------------------------------
+        143 Randall              15-MAR-06            50
+Shipping
+
+        144 Peter                09-JUL-06            50
+Shipping
+
+        180 Winston              24-JAN-06            50
+Shipping
+
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE DEPARTMENT_ID
+----------- -------------------- --------- -------------
+DEPARTMENT_NAME
+------------------------------
+        181 Jean                 23-FEB-06            50
+Shipping
+
+        182 Martha               21-JUN-07            50
+Shipping
+
+        183 Girard               03-FEB-08            50
+Shipping
+
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE DEPARTMENT_ID
+----------- -------------------- --------- -------------
+DEPARTMENT_NAME
+------------------------------
+        184 Nandita              27-JAN-04            50
+Shipping
+
+        185 Alexis               20-FEB-05            50
+Shipping
+
+        186 Julia                24-JUN-06            50
+Shipping
+
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE DEPARTMENT_ID
+----------- -------------------- --------- -------------
+DEPARTMENT_NAME
+------------------------------
+        187 Anthony              07-FEB-07            50
+Shipping
+
+        188 Kelly                14-JUN-05            50
+Shipping
+
+        189 Jennifer             13-AUG-05            50
+Shipping
+
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE DEPARTMENT_ID
+----------- -------------------- --------- -------------
+DEPARTMENT_NAME
+------------------------------
+        190 Timothy              11-JUL-06            50
+Shipping
+
+        191 Randall              19-DEC-07            50
+Shipping
+
+        192 Sarah                04-FEB-04            50
+Shipping
+
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE DEPARTMENT_ID
+----------- -------------------- --------- -------------
+DEPARTMENT_NAME
+------------------------------
+        193 Britney              03-MAR-05            50
+Shipping
+
+        194 Samuel               01-JUL-06            50
+Shipping
+
+        195 Vance                17-MAR-07            50
+Shipping
+
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE DEPARTMENT_ID
+----------- -------------------- --------- -------------
+DEPARTMENT_NAME
+------------------------------
+        196 Alana                24-APR-06            50
+Shipping
+
+        197 Kevin                23-MAY-06            50
+Shipping
+
+        198 Donald               21-JUN-07            50
+Shipping
+
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE DEPARTMENT_ID
+----------- -------------------- --------- -------------
+DEPARTMENT_NAME
+------------------------------
+        199 Douglas              13-JAN-08            50
+Shipping
+
+        103 Alexander            03-JAN-06            60
+IT
+
+        104 Bruce                21-MAY-07            60
+IT
+
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE DEPARTMENT_ID
+----------- -------------------- --------- -------------
+DEPARTMENT_NAME
+------------------------------
+        105 David                25-JUN-05            60
+IT
+
+        106 Valli                05-FEB-06            60
+IT
+
+        107 Diana                07-FEB-07            60
+IT
+
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE DEPARTMENT_ID
+----------- -------------------- --------- -------------
+DEPARTMENT_NAME
+------------------------------
+        204 Hermann              07-JUN-02            70
+Public Relations
+
+        145 John                 01-OCT-04            80
+Sales
+
+        146 Karen                05-JAN-05            80
+Sales
+
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE DEPARTMENT_ID
+----------- -------------------- --------- -------------
+DEPARTMENT_NAME
+------------------------------
+        147 Alberto              10-MAR-05            80
+Sales
+
+        148 Gerald               15-OCT-07            80
+Sales
+
+        149 Eleni                29-JAN-08            80
+Sales
+
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE DEPARTMENT_ID
+----------- -------------------- --------- -------------
+DEPARTMENT_NAME
+------------------------------
+        150 Peter                30-JAN-05            80
+Sales
+
+        151 David                24-MAR-05            80
+Sales
+
+        152 Peter                20-AUG-05            80
+Sales
+
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE DEPARTMENT_ID
+----------- -------------------- --------- -------------
+DEPARTMENT_NAME
+------------------------------
+        153 Christopher          30-MAR-06            80
+Sales
+
+        154 Nanette              09-DEC-06            80
+Sales
+
+        155 Oliver               23-NOV-07            80
+Sales
+
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE DEPARTMENT_ID
+----------- -------------------- --------- -------------
+DEPARTMENT_NAME
+------------------------------
+        156 Janette              30-JAN-04            80
+Sales
+
+        157 Patrick              04-MAR-04            80
+Sales
+
+        158 Allan                01-AUG-04            80
+Sales
+
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE DEPARTMENT_ID
+----------- -------------------- --------- -------------
+DEPARTMENT_NAME
+------------------------------
+        159 Lindsey              10-MAR-05            80
+Sales
+
+        160 Louise               15-DEC-05            80
+Sales
+
+        161 Sarath               03-NOV-06            80
+Sales
+
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE DEPARTMENT_ID
+----------- -------------------- --------- -------------
+DEPARTMENT_NAME
+------------------------------
+        162 Clara                11-NOV-05            80
+Sales
+
+        163 Danielle             19-MAR-07            80
+Sales
+
+        164 Mattea               24-JAN-08            80
+Sales
+
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE DEPARTMENT_ID
+----------- -------------------- --------- -------------
+DEPARTMENT_NAME
+------------------------------
+        165 David                23-FEB-08            80
+Sales
+
+        166 Sundar               24-MAR-08            80
+Sales
+
+        167 Amit                 21-APR-08            80
+Sales
+
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE DEPARTMENT_ID
+----------- -------------------- --------- -------------
+DEPARTMENT_NAME
+------------------------------
+        168 Lisa                 11-MAR-05            80
+Sales
+
+        169 Harrison             23-MAR-06            80
+Sales
+
+        170 Tayler               24-JAN-06            80
+Sales
+
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE DEPARTMENT_ID
+----------- -------------------- --------- -------------
+DEPARTMENT_NAME
+------------------------------
+        171 William              23-FEB-07            80
+Sales
+
+        172 Elizabeth            24-MAR-07            80
+Sales
+
+        173 Sundita              21-APR-08            80
+Sales
+
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE DEPARTMENT_ID
+----------- -------------------- --------- -------------
+DEPARTMENT_NAME
+------------------------------
+        174 Ellen                11-MAY-04            80
+Sales
+
+        175 Alyssa               19-MAR-05            80
+Sales
+
+        176 Jonathon             24-MAR-06            80
+Sales
+
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE DEPARTMENT_ID
+----------- -------------------- --------- -------------
+DEPARTMENT_NAME
+------------------------------
+        177 Jack                 23-APR-06            80
+Sales
+
+        179 Charles              04-JAN-08            80
+Sales
+
+        100 Steven               17-JUN-03            90
+Executive
+
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE DEPARTMENT_ID
+----------- -------------------- --------- -------------
+DEPARTMENT_NAME
+------------------------------
+        101 Neena                21-SEP-05            90
+Executive
+
+        102 Lex                  13-JAN-01            90
+Executive
+
+        108 Nancy                17-AUG-02           100
+Finance
+
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE DEPARTMENT_ID
+----------- -------------------- --------- -------------
+DEPARTMENT_NAME
+------------------------------
+        109 Daniel               16-AUG-02           100
+Finance
+
+        110 John                 28-SEP-05           100
+Finance
+
+        111 Ismael               30-SEP-05           100
+Finance
+
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE DEPARTMENT_ID
+----------- -------------------- --------- -------------
+DEPARTMENT_NAME
+------------------------------
+        112 Jose Manuel          07-MAR-06           100
+Finance
+
+        113 Luis                 07-DEC-07           100
+Finance
+
+        205 Shelley              07-JUN-02           110
+Accounting
+
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE DEPARTMENT_ID
+----------- -------------------- --------- -------------
+DEPARTMENT_NAME
+------------------------------
+        206 William              07-JUN-02           110
+Accounting
+
+                                                     120
+Treasury
+
+                                                     130
+Corporate Tax
+
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE DEPARTMENT_ID
+----------- -------------------- --------- -------------
+DEPARTMENT_NAME
+------------------------------
+                                                     140
+Control And Credit
+
+                                                     150
+Shareholder Services
+
+                                                     160
+Benefits
+
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE DEPARTMENT_ID
+----------- -------------------- --------- -------------
+DEPARTMENT_NAME
+------------------------------
+                                                     170
+Manufacturing
+
+                                                     180
+Construction
+
+                                                     190
+Contracting
+
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE DEPARTMENT_ID
+----------- -------------------- --------- -------------
+DEPARTMENT_NAME
+------------------------------
+                                                     200
+Operations
+
+                                                     210
+IT Support
+
+                                                     220
+NOC
+
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE DEPARTMENT_ID
+----------- -------------------- --------- -------------
+DEPARTMENT_NAME
+------------------------------
+                                                     230
+IT Helpdesk
+
+                                                     240
+Government Sales
+
+                                                     250
+Retail Sales
+
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE DEPARTMENT_ID
+----------- -------------------- --------- -------------
+DEPARTMENT_NAME
+------------------------------
+                                                     260
+Recruiting
+
+                                                     270
+Payroll
+
+
+122 rows selected.
+
+RIGHT OUTER JOIN:
+
+befor querry we desc the locations and departments,
+
+ select l.location_id,l.street_address,l.postal_code,l.city,d.department_id,department_name from locations l join departments d
+  2  on(l.location_id(+)=d.location_id);
+
+LOCATION_ID STREET_ADDRESS                           POSTAL_CODE
+----------- ---------------------------------------- ------------
+CITY                           DEPARTMENT_ID DEPARTMENT_NAME
+------------------------------ ------------- ------------------------------
+       1400 2014 Jabberwocky Rd                      26192
+Southlake                                 60 IT
+
+       1500 2011 Interiors Blvd                      99236
+South San Francisco                       50 Shipping
+
+       1700 2004 Charade Rd                          98199
+Seattle                                  270 Payroll
+
+
+LOCATION_ID STREET_ADDRESS                           POSTAL_CODE
+----------- ---------------------------------------- ------------
+CITY                           DEPARTMENT_ID DEPARTMENT_NAME
+------------------------------ ------------- ------------------------------
+       1700 2004 Charade Rd                          98199
+Seattle                                  260 Recruiting
+
+       1700 2004 Charade Rd                          98199
+Seattle                                  250 Retail Sales
+
+       1700 2004 Charade Rd                          98199
+Seattle                                  240 Government Sales
+
+
+LOCATION_ID STREET_ADDRESS                           POSTAL_CODE
+----------- ---------------------------------------- ------------
+CITY                           DEPARTMENT_ID DEPARTMENT_NAME
+------------------------------ ------------- ------------------------------
+       1700 2004 Charade Rd                          98199
+Seattle                                  230 IT Helpdesk
+
+       1700 2004 Charade Rd                          98199
+Seattle                                  220 NOC
+
+       1700 2004 Charade Rd                          98199
+Seattle                                  210 IT Support
+
+
+LOCATION_ID STREET_ADDRESS                           POSTAL_CODE
+----------- ---------------------------------------- ------------
+CITY                           DEPARTMENT_ID DEPARTMENT_NAME
+------------------------------ ------------- ------------------------------
+       1700 2004 Charade Rd                          98199
+Seattle                                  200 Operations
+
+       1700 2004 Charade Rd                          98199
+Seattle                                  190 Contracting
+
+       1700 2004 Charade Rd                          98199
+Seattle                                  180 Construction
+
+
+LOCATION_ID STREET_ADDRESS                           POSTAL_CODE
+----------- ---------------------------------------- ------------
+CITY                           DEPARTMENT_ID DEPARTMENT_NAME
+------------------------------ ------------- ------------------------------
+       1700 2004 Charade Rd                          98199
+Seattle                                  170 Manufacturing
+
+       1700 2004 Charade Rd                          98199
+Seattle                                  160 Benefits
+
+       1700 2004 Charade Rd                          98199
+Seattle                                  150 Shareholder Services
+
+
+LOCATION_ID STREET_ADDRESS                           POSTAL_CODE
+----------- ---------------------------------------- ------------
+CITY                           DEPARTMENT_ID DEPARTMENT_NAME
+------------------------------ ------------- ------------------------------
+       1700 2004 Charade Rd                          98199
+Seattle                                  140 Control And Credit
+
+       1700 2004 Charade Rd                          98199
+Seattle                                  130 Corporate Tax
+
+       1700 2004 Charade Rd                          98199
+Seattle                                  120 Treasury
+
+
+LOCATION_ID STREET_ADDRESS                           POSTAL_CODE
+----------- ---------------------------------------- ------------
+CITY                           DEPARTMENT_ID DEPARTMENT_NAME
+------------------------------ ------------- ------------------------------
+       1700 2004 Charade Rd                          98199
+Seattle                                  110 Accounting
+
+       1700 2004 Charade Rd                          98199
+Seattle                                  100 Finance
+
+       1700 2004 Charade Rd                          98199
+Seattle                                   90 Executive
+
+
+LOCATION_ID STREET_ADDRESS                           POSTAL_CODE
+----------- ---------------------------------------- ------------
+CITY                           DEPARTMENT_ID DEPARTMENT_NAME
+------------------------------ ------------- ------------------------------
+       1700 2004 Charade Rd                          98199
+Seattle                                   30 Purchasing
+
+       1700 2004 Charade Rd                          98199
+Seattle                                   10 Administration
+
+       1800 147 Spadina Ave                          M5V 2L7
+Toronto                                   20 Marketing
+
+
+LOCATION_ID STREET_ADDRESS                           POSTAL_CODE
+----------- ---------------------------------------- ------------
+CITY                           DEPARTMENT_ID DEPARTMENT_NAME
+------------------------------ ------------- ------------------------------
+       2400 8204 Arthur St
+London                                    40 Human Resources
+
+       2500 Magdalen Centre, The Oxford Science Park OX9 9ZB
+Oxford                                    80 Sales
+
+       2700 Schwanthalerstr. 7031                    80925
+Munich                                    70 Public Relations
+
+
+27 rows selected.
+
 SQL>
+
+
+
+
+
+
 
 
 
