@@ -582,5 +582,9 @@ EleniZlotkey
 
 107 rows selected.
 
-SQL>
+SQL>select length('harshitha')from dual;
+
+LENGTH('HARSHITHA')
+-------------------
+                  9
 
