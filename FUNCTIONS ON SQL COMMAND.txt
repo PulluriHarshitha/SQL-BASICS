@@ -630,5 +630,11 @@ TRIM(
 -----
 omato
 
+SQL> select sysdate from dual;
+
+SYSDATE
+---------
+11-FEB-26
+
 
 
