@@ -594,4 +594,10 @@ SUBST
 -----
 harsh
 
+SQL> select instr('harshitha','s')from dual;
+
+INSTR('HARSHITHA','S')
+----------------------
+                     4
+
 
