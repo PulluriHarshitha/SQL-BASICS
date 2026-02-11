@@ -300,3 +300,287 @@ CONCAT('PULLURI'
 ----------------
 pulluriharshitha
 
+SQL> select first_name,last_name from employees;
+
+FIRST_NAME           LAST_NAME
+-------------------- -------------------------
+Ellen                Abel
+Sundar               Ande
+Mozhe                Atkinson
+David                Austin
+Hermann              Baer
+Shelli               Baida
+Amit                 Banda
+Elizabeth            Bates
+Sarah                Bell
+David                Bernstein
+Laura                Bissot
+
+FIRST_NAME           LAST_NAME
+-------------------- -------------------------
+Harrison             Bloom
+Alexis               Bull
+Anthony              Cabrio
+Gerald               Cambrault
+Nanette              Cambrault
+John                 Chen
+Kelly                Chung
+Karen                Colmenares
+Curtis               Davies
+Lex                  De Haan
+Julia                Dellinger
+
+FIRST_NAME           LAST_NAME
+-------------------- -------------------------
+Jennifer             Dilly
+Louise               Doran
+Bruce                Ernst
+Alberto              Errazuriz
+Britney              Everett
+Daniel               Faviet
+Pat                  Fay
+Kevin                Feeney
+Jean                 Fleaur
+Tayler               Fox
+Adam                 Fripp
+
+FIRST_NAME           LAST_NAME
+-------------------- -------------------------
+Timothy              Gates
+Ki                   Gee
+Girard               Geoni
+William              Gietz
+Douglas              Grant
+Kimberely            Grant
+Nancy                Greenberg
+Danielle             Greene
+Peter                Hall
+Michael              Hartstein
+Shelley              Higgins
+
+FIRST_NAME           LAST_NAME
+-------------------- -------------------------
+Guy                  Himuro
+Alexander            Hunold
+Alyssa               Hutton
+Charles              Johnson
+Vance                Jones
+Payam                Kaufling
+Alexander            Khoo
+Janette              King
+Steven               King
+Neena                Kochhar
+Sundita              Kumar
+
+FIRST_NAME           LAST_NAME
+-------------------- -------------------------
+Renske               Ladwig
+James                Landry
+David                Lee
+Jack                 Livingston
+Diana                Lorentz
+Jason                Mallin
+Steven               Markle
+James                Marlow
+Mattea               Marvins
+Randall              Matos
+Susan                Mavris
+
+FIRST_NAME           LAST_NAME
+-------------------- -------------------------
+Samuel               McCain
+Allan                McEwen
+Irene                Mikkilineni
+harshu               Mourgos
+Julia                Nayer
+Donald               OConnell
+Christopher          Olsen
+TJ                   Olson
+Lisa                 Ozer
+Karen                Partners
+Valli                Pataballa
+
+FIRST_NAME           LAST_NAME
+-------------------- -------------------------
+Joshua               Patel
+Randall              Perkins
+Hazel                Philtanker
+Luis                 Popp
+Trenna               Rajs
+Den                  Raphaely
+Michael              Rogers
+John                 Russell
+Nandita              Sarchand
+Ismael               Sciarra
+John                 Seo
+
+FIRST_NAME           LAST_NAME
+-------------------- -------------------------
+Sarath               Sewall
+Lindsey              Smith
+William              Smith
+Stephen              Stiles
+Martha               Sullivan
+Patrick              Sully
+Jonathon             Taylor
+Winston              Taylor
+Sigal                Tobias
+Peter                Tucker
+Oliver               Tuvault
+
+FIRST_NAME           LAST_NAME
+-------------------- -------------------------
+Jose Manuel          Urman
+Peter                Vargas
+Clara                Vishney
+Shanta               Vollman
+Alana                Walsh
+Matthew              Weiss
+Jennifer             Whalen
+Eleni                Zlotkey
+
+107 rows selected.
+
+SQL> select concat(first_name,last_name)from employees;
+
+CONCAT(FIRST_NAME,LAST_NAME)
+---------------------------------------------
+EllenAbel
+SundarAnde
+MozheAtkinson
+DavidAustin
+HermannBaer
+ShelliBaida
+AmitBanda
+ElizabethBates
+SarahBell
+DavidBernstein
+LauraBissot
+
+CONCAT(FIRST_NAME,LAST_NAME)
+---------------------------------------------
+HarrisonBloom
+AlexisBull
+AnthonyCabrio
+GeraldCambrault
+NanetteCambrault
+JohnChen
+KellyChung
+KarenColmenares
+CurtisDavies
+LexDe Haan
+JuliaDellinger
+
+CONCAT(FIRST_NAME,LAST_NAME)
+---------------------------------------------
+JenniferDilly
+LouiseDoran
+BruceErnst
+AlbertoErrazuriz
+BritneyEverett
+DanielFaviet
+PatFay
+KevinFeeney
+JeanFleaur
+TaylerFox
+AdamFripp
+
+CONCAT(FIRST_NAME,LAST_NAME)
+---------------------------------------------
+TimothyGates
+KiGee
+GirardGeoni
+WilliamGietz
+DouglasGrant
+KimberelyGrant
+NancyGreenberg
+DanielleGreene
+PeterHall
+MichaelHartstein
+ShelleyHiggins
+
+CONCAT(FIRST_NAME,LAST_NAME)
+---------------------------------------------
+GuyHimuro
+AlexanderHunold
+AlyssaHutton
+CharlesJohnson
+VanceJones
+PayamKaufling
+AlexanderKhoo
+JanetteKing
+StevenKing
+NeenaKochhar
+SunditaKumar
+
+CONCAT(FIRST_NAME,LAST_NAME)
+---------------------------------------------
+RenskeLadwig
+JamesLandry
+DavidLee
+JackLivingston
+DianaLorentz
+JasonMallin
+StevenMarkle
+JamesMarlow
+MatteaMarvins
+RandallMatos
+SusanMavris
+
+CONCAT(FIRST_NAME,LAST_NAME)
+---------------------------------------------
+SamuelMcCain
+AllanMcEwen
+IreneMikkilineni
+harshuMourgos
+JuliaNayer
+DonaldOConnell
+ChristopherOlsen
+TJOlson
+LisaOzer
+KarenPartners
+ValliPataballa
+
+CONCAT(FIRST_NAME,LAST_NAME)
+---------------------------------------------
+JoshuaPatel
+RandallPerkins
+HazelPhiltanker
+LuisPopp
+TrennaRajs
+DenRaphaely
+MichaelRogers
+JohnRussell
+NanditaSarchand
+IsmaelSciarra
+JohnSeo
+
+CONCAT(FIRST_NAME,LAST_NAME)
+---------------------------------------------
+SarathSewall
+LindseySmith
+WilliamSmith
+StephenStiles
+MarthaSullivan
+PatrickSully
+JonathonTaylor
+WinstonTaylor
+SigalTobias
+PeterTucker
+OliverTuvault
+
+CONCAT(FIRST_NAME,LAST_NAME)
+---------------------------------------------
+Jose ManuelUrman
+PeterVargas
+ClaraVishney
+ShantaVollman
+AlanaWalsh
+MatthewWeiss
+JenniferWhalen
+EleniZlotkey
+
+107 rows selected.
+
+SQL>
+
