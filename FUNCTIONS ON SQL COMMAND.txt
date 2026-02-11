@@ -618,5 +618,17 @@ REPLACE('HARSHITHA5','H
 -----------------------
 reddyarsreddyitreddya 5
 
+SQL> select trim(leading 'a' from 'apple') from dual;
+
+TRIM
+----
+pple
+
+SQL> select trim(both 't' from 'tomato') from dual;
+
+TRIM(
+-----
+omato
+
 
 
