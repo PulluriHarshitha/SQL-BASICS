@@ -588,3 +588,10 @@ LENGTH('HARSHITHA')
 -------------------
                   9
 
+SQL> select substr('harshitha',1,5)from dual;
+
+SUBST
+-----
+harsh
+
+
