@@ -600,4 +600,23 @@ INSTR('HARSHITHA','S')
 ----------------------
                      4
 
+SQL> select replace('harshitha & rohith','h','h')from dual;
+Enter value for rohith: 5
+old   1: select replace('harshitha & rohith','h','h')from dual
+new   1: select replace('harshitha 5','h','h')from dual
+
+REPLACE('HA
+-----------
+harshitha 5
+
+SQL> select replace('harshitha & rohith','h','reddy')from dual;
+Enter value for rohith: 5
+old   1: select replace('harshitha & rohith','h','reddy')from dual
+new   1: select replace('harshitha 5','h','reddy')from dual
+
+REPLACE('HARSHITHA5','H
+-----------------------
+reddyarsreddyitreddya 5
+
+
 
