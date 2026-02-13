@@ -50,4 +50,35 @@ nani                                                    65000        400
             5000
 
 
+EXAMPLE 2: SQL> create table rohith (
+  2  id_int,
+  3  name
+  4
+SQL> create table
+  2
+SQL> create table rohith (
+  2  id number,
+  3  name varchar2(50),
+  4  marks number
+  5  );
+
+Table created.
+
+SQL> insert all
+  2  into rohith values(1,'harshu' ,74)
+  3  into rohith values(2,'sweety' ,87)
+  4  into rohith values(3,'chintu' ,56)
+  5  select * from dual;
+
+3 rows created.
+
+SQL> select * from rohith
+  2  where marks >=50;
+
+        ID NAME                                                    MARKS
+---------- -------------------------------------------------- ----------
+         1 harshu                                                     74
+         2 sweety                                                     87
+         3 chintu                                                     56
+
 SQL>
