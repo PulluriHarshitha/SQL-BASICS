@@ -52,3 +52,39 @@ SQL> desc guptha
  HIRE_DATE                                          DATE
  SALARY                                             NUMBER(10,2)
 
+TRUNCATE_Remove all records from a table, including all spaces allocated for the records are removed
+
+SQL> truncate table guptha;
+
+Table truncated.
+
+SQL> desc guptha;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ R_ID                                      NOT NULL NUMBER(38)
+ FIRST_NAME                                         VARCHAR2(100)
+ HIRE_DATE                                          DATE
+ SALARY                                             NUMBER(10,2)
+
+SQL>drop table guptha;
+
+Table dropped.
+
+SQL> desc guptha
+ERROR:
+ORA-04043: object guptha does not exist
+ TABLE SHOULD BE DROP OR DELETED RANDOMLY
+ FLASHBACK_restore a dropped table back from the recycle bin.
+
+SQL> flashback table guptha to before drop;
+
+Flashback complete.
+
+SQL> desc guptha
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ R_ID                                      NOT NULL NUMBER(38)
+ FIRST_NAME                                         VARCHAR2(100)
+ HIRE_DATE                                          DATE
+ SALARY                                             NUMBER(10,2)
+
