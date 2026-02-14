@@ -88,3 +88,22 @@ SQL> desc guptha
  HIRE_DATE                                          DATE
  SALARY                                             NUMBER(10,2)
 
+"PURGE"TABLE MEANS PERMENTALY DELETED A DATABASE
+
+SQL> drop table guptha purge;
+
+Table dropped.
+
+SQL> purge recyclebin
+  2  ;
+
+Recyclebin purged.
+
+SQL> desc guptha;
+ERROR:
+ORA-04043: object guptha does not exist
+
+ after using purge keyword table should be deleted permantely it shows error.
+
+
+
