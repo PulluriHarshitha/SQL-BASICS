@@ -105,5 +105,81 @@ ORA-04043: object guptha does not exist
 
  after using purge keyword table should be deleted permantely it shows error.
 
+DML - Data Manipulation Language
+DML commands are used to manipulate the data stored in database tables. With DML, you can insert new records, update existing ones, delete unwanted data or retrieve information.
+commands-insert,update,delete
+
+ create table google (
+  2  job_id number primary key,
+  3  job_title varchar2(50),
+  4  min_salary number(1,2),
+  5  max_salary number(10,20)
+  6  );
+
+Table created.
+
+SQL> desc jobs;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ JOB_ID                                    NOT NULL VARCHAR2(10)
+ JOB_TITLE                                 NOT NULL VARCHAR2(35)
+ MIN_SALARY                                         NUMBER(6)
+ MAX_SALARY                                         NUMBER(6)
+
+Data type mistakes in your table
+❌ NUMBER(1,2)
+
+This is invalid logic because scale (2) cannot be greater than precision (1).
+
+❌ NUMBER(10,20)
+
+This is also invalid because scale (20) cannot be greater than precision (10). 
+after we modify the table
+
+SQL> ALTER TABLE google MODIFY min_salary NUMBER(10,2);
+
+Table altered.
+
+SQL> ALTER TABLE google MODIFY max_salary NUMBER(10,2);
+
+Table altered.
+
+SQL> desc google;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ JOB_ID                                    NOT NULL NUMBER
+ JOB_TITLE                                          VARCHAR2(50)
+ MIN_SALARY                                         NUMBER(10,2)
+ MAX_SALARY                                         NUMBER(10,2)
+
+if u want insert a values on above table
+
+SQL> insert into google(job_id,job_title,min_salary,max_salary)
+  2  values(1250,'hr',25000,150000);
+
+1 row created.
+
+SQL> insert into google values(1231,'manager',30000,2000000);
+
+1 row created.
+
+SQL> select * from google;
+
+    JOB_ID JOB_TITLE                                          MIN_SALARY
+---------- -------------------------------------------------- ----------
+MAX_SALARY
+----------
+      1250 hr                                                      25000
+    150000
+
+      1231 manager                                                 30000
+   2000000
+
+
+SQL>
+
+
+
+
 
 
