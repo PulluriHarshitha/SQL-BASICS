@@ -1392,7 +1392,11 @@ William
 
 106 rows selected.
 
-SQL>
+DCL - Data Control Language
+DCL (Data Control Language) includes commands such as GRANT and REVOKE which mainly deal with the rights, permissions and other controls of the database system. These commands are used to control access to data in the database by granting or revoking permissions.
+
+commands _ grant,revoke
+
 
 
 
