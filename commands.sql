@@ -176,10 +176,67 @@ MAX_SALARY
    2000000
 
 
-SQL>
+EXAMPLE 2
+
+SQL> create table flipkart(
+  2  job_id number primary key,
+  3  job_title varchar2(50),
+  4  min_salary number(1,2),
+  5  max_salary number(10,2)
+  6  );
+
+Table created.
+
+SQL> ALTER TABLE flipkart MODIFY min_salary NUMBER(10,2);
+
+Table altered.
+
+SQL> ALTER TABLE flipkart MODIFY max_salary NUMBER(10,2);
+
+Table altered.
+
+SQL> desc flipkart;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ JOB_ID                                    NOT NULL NUMBER
+ JOB_TITLE                                          VARCHAR2(50)
+ MIN_SALARY                                         NUMBER(10,2)
+ MAX_SALARY                                         NUMBER(10,2)
+
+SQL> insert into flipkart(job_id,job_title,min_salary,max_salary)
+  2  values(1231,'manager',35000,85000);
+
+1 row created.
+SQL> select * from flipkart;
+
+    JOB_ID JOB_TITLE                                          MIN_SALARY
+---------- -------------------------------------------------- ----------
+MAX_SALARY
+----------
+      1231 manager                                                 35000
+     85000
 
 
+SQL> delete from flipkart
+  2  where job_id = 1231;
 
+1 row deleted.
+
+SQL> select * from flipkart where job_id = 1231;
+
+no rows selected
+
+SQL> commit;
+
+Commit complete.
+
+SQL> desc flipkart;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ JOB_ID                                    NOT NULL NUMBER
+ JOB_TITLE                                          VARCHAR2(50)
+ MIN_SALARY                                         NUMBER(10,2)
+ MAX_SALARY                                         NUMBER(10,2)
 
 
 
