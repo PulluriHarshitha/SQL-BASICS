@@ -1398,6 +1398,13 @@ DCL (Data Control Language) includes commands such as GRANT and REVOKE which mai
 commands _ grant-> give permission
            revoke-> take permission
 
+TCL - Transaction Control Language
+Transactions group a set of tasks into a single execution unit. Each transaction begins with a specific task and ends when all the tasks in the group are successfully completed. If any of the tasks fail, transaction fails. Therefore, a transaction has only two results: success or failure.
+
+commands_1)rollback 
+         2)savepoint
+
+
 
 
 
