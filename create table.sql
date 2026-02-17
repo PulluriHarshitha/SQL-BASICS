@@ -87,5 +87,41 @@ germany                                                    25 888994098
 
 6 rows selected.
 
+OUTPUT 2 : IF YOU WANT SPECFIC COLOUMNS
+
+SQL> select firstname,country,age from airtelcustomer;
+
+FIRSTNAME
+--------------------------------------------------
+COUNTRY                                                   AGE
+-------------------------------------------------- ----------
+harshu
+india                                                      20
+
+rohit
+usa                                                        21
+
+adhavith
+japan                                                      28
+
+
+FIRSTNAME
+--------------------------------------------------
+COUNTRY                                                   AGE
+-------------------------------------------------- ----------
+manasa
+uk                                                         27
+
+sathuakka
+spain                                                      23
+
+vaishu
+germany                                                    25
+
+
+6 rows selected.
+
+
+
 
 
