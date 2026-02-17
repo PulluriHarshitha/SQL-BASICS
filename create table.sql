@@ -121,6 +121,22 @@ germany                                                    25
 
 6 rows selected.
 
+OUTPUT 3 : SPECFIC CONDITION 
+
+select * from airtelcustomer where country = 'india';
+
+AIRTELCUSTOMERID FIRSTNAME
+---------------- --------------------------------------------------
+LASTNAME
+--------------------------------------------------
+COUNTRY                                                   AGE PHONE
+-------------------------------------------------- ---------- ----------
+               1 harshu
+pulluri
+india                                                      20 987654321
+
+
+
 
 
 
