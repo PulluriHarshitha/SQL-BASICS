@@ -135,6 +135,49 @@ COUNTRY                                                   AGE PHONE
 pulluri
 india                                                      20 987654321
 
+OUTPUT 4 : Age > 25 unna records
+
+SQL> select * from airtelcustomer where age > 20;
+
+AIRTELCUSTOMERID FIRSTNAME
+---------------- --------------------------------------------------
+LASTNAME
+--------------------------------------------------
+COUNTRY                                                   AGE PHONE
+-------------------------------------------------- ---------- ----------
+               2 rohit
+reddi
+usa                                                        21 987654021
+
+               3 adhavith
+reddi
+japan                                                      28 987954091
+
+AIRTELCUSTOMERID FIRSTNAME
+---------------- --------------------------------------------------
+LASTNAME
+--------------------------------------------------
+COUNTRY                                                   AGE PHONE
+-------------------------------------------------- ---------- ----------
+
+               4 manasa
+reddy
+uk                                                         27 887954091
+
+               5 sathuakka
+dyvarshetti
+
+AIRTELCUSTOMERID FIRSTNAME
+---------------- --------------------------------------------------
+LASTNAME
+--------------------------------------------------
+COUNTRY                                                   AGE PHONE
+-------------------------------------------------- ---------- ----------
+spain                                                      23 887974098
+
+               6 vaishu
+reddi
+germany                                                    25 888994098
 
 
 
