@@ -17,3 +17,14 @@ SQL> CREATE TABLE airtelcustomer (
   8  );
 
 Table created.
+
+SQL> INSERT ALL
+  2    INTO airtelcustomer VALUES (1, 'harshu', 'pulluri', 'india', 20, '987654321')
+  3    INTO airtelcustomer VALUES (2, 'rohit', 'reddi', 'usa', 21, '987654021')
+  4    INTO airtelcustomer VALUES (3, 'adhavith', 'reddi', 'japan', 28, '987954091')
+  5    INTO airtelcustomer VALUES (4, 'manasa', 'reddy', 'uk', 27, '887954091')
+  6    INTO airtelcustomer VALUES (5, 'sathuakka', 'dyvarshetti', 'spain', 23, '887974098')
+  7    INTO airtelcustomer VALUES (6, 'vaishu', 'reddi', 'germany', 25, '888994098')
+  8  SELECT * FROM dual;
+
+6 rows created.
