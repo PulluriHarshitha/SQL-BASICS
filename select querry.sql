@@ -112,3 +112,119 @@ jenila                                                       5
 meera                                                        6
 
 6 rows selected.
+
+QUERRY 2:
+
+SQL> SELECT FirstName, LastName
+  2  FROM interview;
+
+FIRSTNAME
+--------------------------------------------------
+LASTNAME
+--------------------------------------------------
+Amit
+Sharma
+
+sophia
+miller
+
+akira
+tanaka
+
+
+FIRSTNAME
+--------------------------------------------------
+LASTNAME
+--------------------------------------------------
+carlos
+hemas
+
+jenila
+rosy
+
+meera
+jasmine
+
+
+6 rows selected.
+
+QUERRY 3 :SQL> SELECT FirstName, LastName
+  2  FROM interview;
+
+FIRSTNAME
+--------------------------------------------------
+LASTNAME
+--------------------------------------------------
+Amit
+Sharma
+
+sophia
+miller
+
+akira
+tanaka
+
+
+FIRSTNAME
+--------------------------------------------------
+LASTNAME
+--------------------------------------------------
+carlos
+hemas
+
+jenila
+rosy
+
+meera
+jasmine
+
+
+6 rows selected.
+
+SQL>SQL> SELECT FirstName, LastName
+  2  FROM interview;
+
+FIRSTNAME
+--------------------------------------------------
+LASTNAME
+--------------------------------------------------
+Amit
+Sharma
+
+sophia
+miller
+
+akira
+tanaka
+
+
+FIRSTNAME
+--------------------------------------------------
+LASTNAME
+--------------------------------------------------
+carlos
+hemas
+
+jenila
+rosy
+
+meera
+jasmine
+
+
+6 rows selected.
+
+QUERRY 3 : SELECT Statement with WHERE Clause
+
+SQL> select firstname,lastname
+  2  from interview
+  3  where age = 21;
+
+FIRSTNAME
+--------------------------------------------------
+LASTNAME
+--------------------------------------------------
+jenila
+rosy
+
+
