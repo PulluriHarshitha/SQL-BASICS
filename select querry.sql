@@ -276,3 +276,63 @@ QUERRY 6: SELECT Statement with HAVING Clause
         24              1
 
 6 rows selected.
+
+
+QUERRY 7: SELECT Statement with ORDER BY clause
+
+
+SQL> select * from interview ORDER BY Age desc;
+
+CUSTOMER_ID FIRSTNAME
+----------- --------------------------------------------------
+LASTNAME                                                  AGE
+-------------------------------------------------- ----------
+COUNTRY                                            PHONE_NUMBER
+-------------------------------------------------- ------------
+          2 sophia
+miller                                                     32
+usa                                                  8886543210
+
+          4 carlos
+hemas                                                      28
+italy                                                7654542288
+
+CUSTOMER_ID FIRSTNAME
+----------- --------------------------------------------------
+LASTNAME                                                  AGE
+-------------------------------------------------- ----------
+COUNTRY                                            PHONE_NUMBER
+-------------------------------------------------- ------------
+
+          6 meera
+jasmine                                                    25
+russia                                               9797547798
+
+          3 akira
+tanaka                                                     24
+
+CUSTOMER_ID FIRSTNAME
+----------- --------------------------------------------------
+LASTNAME                                                  AGE
+-------------------------------------------------- ----------
+COUNTRY                                            PHONE_NUMBER
+-------------------------------------------------- ------------
+japan                                                7654543210
+
+          1 Amit
+Sharma                                                     22
+India                                                9876543210
+
+          5 jenila
+
+CUSTOMER_ID FIRSTNAME
+----------- --------------------------------------------------
+LASTNAME                                                  AGE
+-------------------------------------------------- ----------
+COUNTRY                                            PHONE_NUMBER
+-------------------------------------------------- ------------
+rosy                                                       21
+china                                                7654547798
+
+
+6 rows selected.
