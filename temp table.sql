@@ -17,6 +17,8 @@ name varchar2(50),
 salary number
 ) on commit delete rows;
 
+table created
+
 insert into temp_mugdhasarees 
 values (101, 'amit', 20000);
 insert into temp_mugdhasarees
@@ -45,4 +47,47 @@ select * from temp_mugdha sarees
 ERROR at line 1:
 ORA-00942: table or view does not exist (it gives error means i will give on table creation  after commit delete my temp table)
 
+SQL> create global temporary table temp_kaladharfabrics (
+  2  id number,
+  3  name varchar2(50),
+  4  salary number
+  5  ) on commit preserve rows;
 
+Table created.
+
+SQL>SQL> insert into temp_kaladharfabrics
+  2  values (101, 'amit', 20000);
+
+1 row created.
+
+SQL> insert into temp_kaladharfabrics
+  2  values (201, 'pranith', 25000);
+
+1 row created.
+
+SQL> select * from dual;
+
+D
+-
+X
+
+SQL> select * from temp_kaladharfabrics;
+
+        ID NAME                                                   SALARY
+---------- -------------------------------------------------- ----------
+       101 amit                                                    20000
+       201 pranith                                                 25000
+
+SQL> commit;
+
+Commit complete.
+
+SQL> select * from temp_kaladharfabrics;
+
+        ID NAME                                                   SALARY
+---------- -------------------------------------------------- ----------
+       101 amit                                                    20000
+       201 pranith                                                 25000
+
+after commit complete i will give input on perserve rows on a table thats why it will give output
+ 
