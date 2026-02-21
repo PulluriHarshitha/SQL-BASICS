@@ -227,4 +227,52 @@ LASTNAME
 jenila
 rosy
 
+QUERRY 4 : SELECT with DISTINCT Clause
 
+SQL> SELECT DISTINCT Country
+  2  from interview;
+
+COUNTRY
+--------------------------------------------------
+japan
+India
+italy
+usa
+china
+russia
+
+6 rows selected.
+
+SQL> SELECT DISTINCT phone_number
+  2  from interview;
+
+PHONE_NUMBER
+------------
+  7654547798
+  9797547798
+  9876543210
+  8886543210
+  7654543210
+  7654542288
+
+6 rows selected. 
+
+DISTINCT means unique from the table;
+
+QUERRY 6: SELECT Statement with HAVING Clause
+
+ select age , COUNT(*) AS customer_count
+  2  from interview
+  3  GROUP BY age
+  4  HAVING COUNT(*) >= 1;
+
+       AGE CUSTOMER_COUNT
+---------- --------------
+        22              1
+        25              1
+        28              1
+        21              1
+        32              1
+        24              1
+
+6 rows selected.
