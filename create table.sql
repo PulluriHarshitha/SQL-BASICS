@@ -179,6 +179,63 @@ spain                                                      23 887974098
 reddi
 germany                                                    25 888994098
 
+OUTPUT 5 : RENAME THE TABLE_NAME
+
+QUERRY:RENAME old_table_name TO new_table_name;
+
+rename airtelcustomer to jiocustomer;
+
+Table renamed.
+
+select firstname, age from jiocustomer order by age desc;
+
+FIRSTNAME                                                 AGE
+-------------------------------------------------- ----------
+adhavith                                                   28
+manasa                                                     27
+vaishu                                                     25
+sathuakka                                                  23
+rohit                                                      21
+harshu                                                     20
+
+6 rows selected.
+
+SQL> alter table jiocustomer drop column lastname;
+
+Table altered.
+
+SQL> desc jiocustomer;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ AIRTELCUSTOMERID                          NOT NULL NUMBER
+ FIRSTNAME                                          VARCHAR2(50)
+ COUNTRY                                            VARCHAR2(50)
+ AGE                                                NUMBER
+ PHONE                                              VARCHAR2(10)
+
+SQL> alter table jiocustomer drop (airtelcustomerid,age);
+
+Table altered.
+
+SQL> desc jiocustomer ;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ FIRSTNAME                                          VARCHAR2(50)
+ COUNTRY                                            VARCHAR2(50)
+ PHONE                                              VARCHAR2(10)
+
+SQL>SQL> drop table jiocustomer purge;
+
+Table dropped.
+
+SQL> desc jiocustomer;
+ERROR:
+ORA-04043: object jiocustomer does not exist
+
+#PURGE keyword to delete table permantely on database;
+
+
+
 
 
 
