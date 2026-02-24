@@ -288,4 +288,102 @@ xxxxxxxxxx              23
 
 8 rows selected.
 
+OUTPUT 5 :  Insert Multiple Rows At A Time
+
+SQL> insert into stu_mrtn (roll_no, name, address, phone, age)
+  2  values ( 9,'john','hyd','xxxxxxxxxx',27);
+
+1 row created.
+
+SQL> insert into stu_mrtn values ( 10,'nainka','bhutan','xxxxxxxxxx',28);
+
+1 row created.
+
+SQL> select * from stu_mrtn;
+
+   ROLL_NO NAME
+---------- --------------------------------------------------
+ADDRESS
+--------------------------------------------------------------------------------
+PHONE                  AGE
+--------------- ----------
+         1 Sophia
+Berlin
+xxxxxxxxxx              18
+
+         2 alexa
+tokyo
+xxxxxxxxxx              19
+
+   ROLL_NO NAME
+---------- --------------------------------------------------
+ADDRESS
+--------------------------------------------------------------------------------
+PHONE                  AGE
+--------------- ----------
+
+         3 santa
+berlin
+xxxxxxxxxx              20
+
+         4 akira
+india
+
+   ROLL_NO NAME
+---------- --------------------------------------------------
+ADDRESS
+--------------------------------------------------------------------------------
+PHONE                  AGE
+--------------- ----------
+xxxxxxxxxx              21
+
+         5 anatha
+india
+xxxxxxxxxx              17
+
+         6 chitti
+
+   ROLL_NO NAME
+---------- --------------------------------------------------
+ADDRESS
+--------------------------------------------------------------------------------
+PHONE                  AGE
+--------------- ----------
+usa
+xxxxxxxxxx              27
+
+         7 nehru
+
+                        27
+
+
+   ROLL_NO NAME
+---------- --------------------------------------------------
+ADDRESS
+--------------------------------------------------------------------------------
+PHONE                  AGE
+--------------- ----------
+         8 nithya
+india
+xxxxxxxxxx              23
+
+         9 john
+hyd
+xxxxxxxxxx              27
+
+   ROLL_NO NAME
+---------- --------------------------------------------------
+ADDRESS
+--------------------------------------------------------------------------------
+PHONE                  AGE
+--------------- ----------
+
+        10 nainka
+bhutan
+xxxxxxxxxx              28
+
+
+10 rows selected.
+
+
 
