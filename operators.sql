@@ -469,3 +469,17 @@ HALF_SALARY
 107 rows selected.
 
 
+2) COMPARISON OPERATORS
+
+CREATE TABLE emp_age (
+  emp_id NUMBER,
+  emp_name VARCHAR2(30),
+  age NUMBER
+);
+
+Table created.
+
+SQL>
+
+
+
