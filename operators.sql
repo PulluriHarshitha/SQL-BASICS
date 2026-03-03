@@ -510,6 +510,43 @@ SQL> SELECT * FROM emp_age WHERE age > 20;
          2 Anu                                    25
          3 Kiran                                  30
 
+3) LOGICAL OPERATORS
+
+SQL> create table stud_logic (
+  2  stud_id number,
+  3  stud_name varchar2(50),
+  4  age number,
+  5  salary number
+  6  );
+
+Table created.
+
+SQL> insert into stud_logic values(1 , 'rohith' ,22 , 45000);
+
+1 row created.
+
+SQL> insert into stud_logic values(2 , 'harshu' ,21 , 40000);
+
+1 row created.
+
+SQL> insert into stud_logic values(3 , 'arshi' ,43 , 48000);
+
+1 row created.
+
+SQL> select * from stud_logic where age > 20 and salary > 30000;
+
+   STUD_ID STUD_NAME                                                 AGE
+---------- -------------------------------------------------- ----------
+    SALARY
+----------
+         1 rohith                                                     22
+     45000
+
+         2 harshu                                                     21
+     40000
+
+         3 arshi                                                      43
+     48000
 
 
 
