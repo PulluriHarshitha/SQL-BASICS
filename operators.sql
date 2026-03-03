@@ -631,3 +631,44 @@ COMPANY
 cybersecurity
 alph
 
+3) BETWEEN OPERATORS 
+
+create table emp_range (
+  2  emp_id number,
+  3  emp_name varchar2(50),
+  4  age number,
+  5  salary number
+  6  );
+
+Table created.
+
+SQL> insert into emp_range values (1, 'rohith' ,22 , 40000);
+
+1 row created.
+
+SQL> insert into emp_range values (2, 'harshitha' ,21 , 30000);
+
+1 row created.
+
+SQL> insert into emp_range values (3, 'harith' ,26 , 35000);
+
+1 row created.
+
+SQL> insert into emp_range values (4, 'arshi' ,26 , 65000);
+
+1 row created.
+
+SQL> select * from emp_range where salary between 30000 and 40000;
+
+    EMP_ID EMP_NAME                                                  AGE
+---------- -------------------------------------------------- ----------
+    SALARY
+----------
+         1 rohith                                                     22
+     40000
+
+         2 harshitha                                                  21
+     30000
+
+         3 harith                                                     26
+     35000
