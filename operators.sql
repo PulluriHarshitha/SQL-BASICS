@@ -549,5 +549,85 @@ SQL> select * from stud_logic where age > 20 and salary > 30000;
      48000
 
 
+4) IN OPERATOR 
 
+ create table stu_operator (
+  2  stud_id number,
+  3  stud_name varchar2(50),
+  4  age number,
+  5  department varchar2(50),
+  6  company varchar2(50)
+  7  );
+
+Table created.
+
+SQL> insert into stu_operator values (1, 'harshu' ,20 ,'IT' , 'smec');
+
+1 row created.
+
+SQL> insert into stu_operator values (2, 'rohith' ,22 ,'IT' , 'smec');
+
+1 row created.
+
+SQL> insert into stu_operator values (3, 'arshii' ,24 ,'cybersecurity' , 'alph');
+
+1 row created.
+
+SQL> insert into stu_operator values (4, 'shiny' ,24 ,'ece' , 'ku');
+
+1 row created.
+
+OUTPUT 1 : SQL> select * from stu_operator where company IN ('smec' , 'alph');
+
+   STUD_ID STUD_NAME                                                 AGE
+---------- -------------------------------------------------- ----------
+DEPARTMENT
+--------------------------------------------------
+COMPANY
+--------------------------------------------------
+         1 harshu                                                     20
+IT
+smec
+
+         2 rohith                                                     22
+IT
+smec
+
+   STUD_ID STUD_NAME                                                 AGE
+---------- -------------------------------------------------- ----------
+DEPARTMENT
+--------------------------------------------------
+COMPANY
+--------------------------------------------------
+
+         3 arshii                                                     24
+cybersecurity
+alph
+
+OUTPUT 2 : SQL> select * from stu_operator where department IN ('IT' , 'cybersecurity');
+
+   STUD_ID STUD_NAME                                                 AGE
+---------- -------------------------------------------------- ----------
+DEPARTMENT
+--------------------------------------------------
+COMPANY
+--------------------------------------------------
+         1 harshu                                                     20
+IT
+smec
+
+         2 rohith                                                     22
+IT
+smec
+
+   STUD_ID STUD_NAME                                                 AGE
+---------- -------------------------------------------------- ----------
+DEPARTMENT
+--------------------------------------------------
+COMPANY
+--------------------------------------------------
+
+         3 arshii                                                     24
+cybersecurity
+alph
 
