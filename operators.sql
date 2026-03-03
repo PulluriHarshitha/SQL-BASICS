@@ -479,7 +479,38 @@ CREATE TABLE emp_age (
 
 Table created.
 
-SQL>
+SQL>SQL> INSERT INTO emp_age VALUES (1, 'Ravi', 22);
+
+1 row created.
+
+SQL> INSERT INTO emp_age VALUES (2, 'Anu', 25);
+
+1 row created.
+
+SQL> INSERT INTO emp_age VALUES (3, 'Kiran', 30);
+
+1 row created.
+
+SQL> select * from emp_age1 where age > 20;
+
+no rows selected
+
+SQL> SELECT * FROM emp_age WHERE age > 24;
+
+    EMP_ID EMP_NAME                              AGE
+---------- ------------------------------ ----------
+         2 Anu                                    25
+         3 Kiran                                  30
+
+SQL> SELECT * FROM emp_age WHERE age > 20;
+
+    EMP_ID EMP_NAME                              AGE
+---------- ------------------------------ ----------
+         1 Ravi                                   22
+         2 Anu                                    25
+         3 Kiran                                  30
+
+
 
 
 
