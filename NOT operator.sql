@@ -72,3 +72,20 @@ nirmal
 
          4 ravana                                                     27
 goa
+
+OUTPUT 2 : NOT with IN ( NOT FROM hyd and nirmal)
+
+SQL> select * from students_mrtn
+  2   where city NOT IN ('Hyderabad','nirmal');
+
+        ID NAME                                                      AGE
+---------- -------------------------------------------------- ----------
+CITY
+--------------------------------------------------
+         3 sitha                                                      23
+delhi
+
+         4 ravana                                                     27
+goa
+
+
