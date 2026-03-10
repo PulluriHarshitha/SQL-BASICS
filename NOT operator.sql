@@ -126,5 +126,54 @@ select * from students_mrtn
          3 sitha              23 delhi
          4 ravana             27 goa
 
+IF WE HAVE TO UPDATE A NEW COLOUM AS 'DEPT' WE USE ALTER TABLE
+
+SQL> ALTER TABLE students_mrtn
+  2  add DEPT_NAME varchar2(50);
+
+Table altered.
+
+SQL> desc students_mrtn;
+ Name                                                                                Null?    Type
+ ----------------------------------------------------------------------------------------------------------------- -------- ----------------------------------------------------------------------------
+ ID                                                                                   NUMBER
+ NAME                                                                                 VARCHAR2(50)
+ AGE                                                                                  NUMBER
+ CITY                                                                                 VARCHAR2(50)
+ DEPT_NAME                                                                            VARCHAR2(50)
+
+SQL> insert into students_mrtn values (2, 'reddi', 21, 'nirmal','IT');
+
+1 row created.
+
+SQL> insert into students_mrtn values (1, 'harshitha', 20, 'Hyderabad','CSE');
+
+1 row created.
+
+
+SQL> insert into students_mrtn values (3, 'sitha', 23, 'delhi','ECE');
+
+1 row created.
+
+SQL> insert into students_mrtn values (4, 'ravana', 27, 'goa','CSM');
+
+1 row created.
+
+SQL> select * from students_mrtn;
+
+        ID NAME              AGE CITY            DEPT_NAME
+---------- ---------- ---------- --------------- --------------------------------------------------
+         1 harshitha          20 Hyderabad
+         2 reddi              21 nirmal
+         3 sitha              23 delhi
+         4 ravana             27 goa
+         2 reddi              21 nirmal          IT
+         1 harshitha          20 Hyderabad       CSE
+         3 sitha              23 delhi           ECE
+         4 ravana             27 goa             CSM
+
+8 rows selected.
+
+
 
 
