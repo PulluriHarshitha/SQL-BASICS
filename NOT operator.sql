@@ -88,4 +88,23 @@ delhi
          4 ravana                                                     27
 goa
 
+OUTPUT 3 : NOT with BETWEEN( AGE NOT B|W 23 TO 27)
+
+SQL> select * from students_mrtn
+  2  where age NOT BETWEEN 23 and 27;
+
+        ID NAME                                                      AGE
+---------- -------------------------------------------------- ----------
+CITY
+--------------------------------------------------
+         1 harshitha                                                  20
+Hyderabad
+
+         2 reddi                                                      21
+nirmal
+
+
+
+
+
 
