@@ -55,4 +55,20 @@ CITY
 goa
 
 
-OUTPUT 1:
+OUTPUT 1:NOT with Condition
+
+SQL> select * from students_mrtn
+  2  where not city = 'delhi';
+
+        ID NAME                                                      AGE
+---------- -------------------------------------------------- ----------
+CITY
+--------------------------------------------------
+         1 harshitha                                                  20
+Hyderabad
+
+         2 reddi                                                      21
+nirmal
+
+         4 ravana                                                     27
+goa
