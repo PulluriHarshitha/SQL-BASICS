@@ -108,18 +108,23 @@ OUTPUT 4 : NOT with LIKE(names not starting with 'R'.)
 SQL> select * from students_mrtn
   2  where age NOT BETWEEN 23 and 27;
 
-        ID NAME                                                      AGE
----------- -------------------------------------------------- ----------
-CITY
---------------------------------------------------
-         1 harshitha                                                  20
-Hyderabad
 
-         2 reddi                                                      21
-nirmal
+        ID NAME              AGE CITY
+---------- ---------- ---------- ---------------
+         1 harshitha          20 Hyderabad
+         2 reddi              21 nirmal
 
+OUTPUT 5 : NOT with NULL(Select rows where city is not NULL)
 
+select * from students_mrtn
+  2  where city is not null;
 
+        ID NAME              AGE CITY
+---------- ---------- ---------- ---------------
+         1 harshitha          20 Hyderabad
+         2 reddi              21 nirmal
+         3 sitha              23 delhi
+         4 ravana             27 goa
 
 
 
