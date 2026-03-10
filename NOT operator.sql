@@ -103,6 +103,21 @@ Hyderabad
          2 reddi                                                      21
 nirmal
 
+OUTPUT 4 : NOT with LIKE(names not starting with 'R'.)
+
+SQL> select * from students_mrtn
+  2  where age NOT BETWEEN 23 and 27;
+
+        ID NAME                                                      AGE
+---------- -------------------------------------------------- ----------
+CITY
+--------------------------------------------------
+         1 harshitha                                                  20
+Hyderabad
+
+         2 reddi                                                      21
+nirmal
+
 
 
 
