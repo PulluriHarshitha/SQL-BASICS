@@ -94,3 +94,19 @@ OUTPUT 3 :SQL> select * from hostel
          4 shiny              26 ku                                            mncl
          5 reethu             27 cec                                           wgl
          6 chinni             24 deg                                           jgl
+
+OUTPUT 4 : MULTIPLE CONDITION
+
+
+SQL> select * from hostel
+  2  where city <> 'mncl'
+  3  and age != 20;
+
+        ID NAME              AGE COLLEGE                                       CITY
+---------- ---------- ---------- -------------------------------------------------- ---------------
+         3 teju               22 cmrit                                         vmd
+         5 reethu             27 cec                                           wgl
+         6 chinni             24 deg                                           jgl
+
+SQL>
+
