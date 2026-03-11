@@ -776,7 +776,7 @@ DEPARTMENT_ID EMPLOYEE_ID
 
 107 rows selected.
 
-SQL>
+SQL>select from the output
 
 
 
