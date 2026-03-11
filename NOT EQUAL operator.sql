@@ -63,4 +63,13 @@ SQL> select * from hostel;
 
 6 rows selected.
 
-output 1:
+OUTPUT 1 : SQL> select * from hostel
+  2  where age <> 20;
+
+        ID NAME              AGE COLLEGE                                       CITY
+---------- ---------- ---------- -------------------------------------------------- ---------------
+         3 teju               22 cmrit                                         vmd
+         4 shiny              26 ku                                            mncl
+         5 reethu             27 cec                                           wgl
+         6 chinni             24 deg                                           jgl
+
