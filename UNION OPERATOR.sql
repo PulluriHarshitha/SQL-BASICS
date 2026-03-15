@@ -123,3 +123,21 @@ NAME
 Ravi
 
 
+OUTPUT 4 : UNION with ORDER BY
+
+SELECT dept FROM students1
+UNION
+SELECT dept FROM students2
+ORDER BY dept;
+
+DEPT
+------------------------------
+csd
+cse
+csm
+ece
+eee
+it
+
+6 rows selected.
+
