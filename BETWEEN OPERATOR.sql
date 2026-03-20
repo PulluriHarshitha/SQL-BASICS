@@ -42,4 +42,30 @@ SQL> select * from childstudent
          3         80 vaishitha school
 
 
+EXAMPLE 2 : SALARY RANGE
+
+CREATE TABLE Employee_MICROSOFT (
+    id NUMBER,
+    name VARCHAR2(50),
+    salary NUMBER
+);
+
+Table Created.
+
+INSERT INTO Employee_MICROSOFT VALUES (1,'Ravi',20000);
+INSERT INTO Employee_MICROSOFT VALUES (2,'Sita',30000);
+INSERT INTO Employee_MICROSOFT VALUES (3,'Ram',40000);
+INSERT INTO Employee_MICROSOFT VALUES (4,'John',50000);
+
+ 4 ROWS CREATED.
+
+SELECT name, salary FROM Employee_MICROSOFT
+WHERE salary BETWEEN 25000 AND 45000;
+
+NAME           SALARY
+---------- ----------
+Sita            30000
+Ram             40000
+
+
 
